@@ -358,96 +358,76 @@ use yii\bootstrap\ActiveForm;
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                     <div class="carousel-controls blog-carousel-controls">
                                         <div class="blog-carousel">
-                                            <div class="one-slide mx-auto">
-                                                <div class="blog text-center d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
-                                                    <div class="blog-box">
-                                                        <div href="" class="img-box blog-index-img-box">
-                                                            <a href="">
-                                                                <img class="img-responsive" src="<?= Yii::$app->homeUrl; ?>uploads/blog/blog1.png" alt="Chairman attends Gastech 2018 Conference at Barcelona, Spain">
-                                                            </a>
-                                                            <div class="overlay">
-                                                                <a class="read-more" href="">+</a>  
+                                            <?php
+                                            if (!empty($news)) {
+                                                foreach ($news as $news_value) {
+                                                    if (!empty($news_value)) {
+                                                        ?>
+                                                        <div class="one-slide mx-auto">
+                                                            <div class="blog text-center d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
+                                                                <div class="blog-box">
+                                                                    <div href="" class="img-box blog-index-img-box">
+                                                                        <a href="">
+                                                                            <img class="img-responsive" src="<?= Yii::$app->homeUrl; ?>uploads/events/<?= $news_value->id ?>/<?= $news_value->id ?>.<?= $news_value->image ?>" alt="Chairman attends Gastech 2018 Conference at Barcelona, Spain">
+                                                                        </a>
+                                                                        <div class="overlay">
+                                                                            <?= Html::a('+', ['/site/events'], ['class' => 'read-more']) ?>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="content-box">
+                                                                        <span><?= date("d-M-Y", strtotime($news_value->date)) ?></span>
+                                                                        <?php
+                                                                        if (strlen($news_value->title) > 20) {
+                                                                            $result = substr($news_value->title, 0, 20) . '..';
+                                                                        } else {
+                                                                            $result = $news_value->title;
+                                                                        }
+                                                                        ?>
+                                                                        <?= Html::a($result, ['/site/events'], ['class' => 'title']) ?>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div class="content-box">
-                                                            <span>20-sep-2018</span>
-                                                            <a class="title">Conference at Barcelona</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="one-slide mx-auto">
-                                                <div class="blog text-center d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
-                                                    <div class="blog-box">
-                                                        <div href="" class="img-box blog-index-img-box">
-                                                            <a href="">
-                                                                <img class="img-responsive" src="<?= Yii::$app->homeUrl; ?>uploads/blog/blog1.png" alt="Chairman attends Gastech 2018 Conference at Barcelona, Spain">
-                                                            </a>
-                                                            <div class="overlay">
-                                                                <a class="read-more" href="">+</a>  
+                                                        <?php
+                                                    }
+                                                }
+                                            }
+                                            ?>
+                                            <?php
+                                            if (!empty($events)) {
+                                                foreach ($events as $events_value) {
+                                                    if (!empty($events_value)) {
+                                                        ?>
+                                                        <div class="one-slide mx-auto">
+                                                            <div class="blog text-center d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
+                                                                <div class="blog-box">
+                                                                    <div href="" class="img-box blog-index-img-box">
+                                                                        <a href="">
+                                                                            <img class="img-responsive" src="<?= Yii::$app->homeUrl; ?>uploads/events/<?= $events_value->id ?>/<?= $events_value->id ?>.<?= $events_value->image ?>" alt="Chairman attends Gastech 2018 Conference at Barcelona, Spain">
+                                                                        </a>
+                                                                        <div class="overlay">
+                                                                            <?= Html::a('+', ['/site/events'], ['class' => 'read-more']) ?>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="content-box">
+                                                                        <span><?= date("d-M-Y", strtotime($events_value->date)) ?></span>
+                                                                        <?php
+                                                                        if (strlen($events_value->title) > 20) {
+                                                                            $result1 = substr($events_value->title, 0, 20) . '..';
+                                                                        } else {
+                                                                            $result1 = $events_value->title;
+                                                                        }
+                                                                        ?>
+                                                                        <?= Html::a($result1, ['/site/events'], ['class' => 'title']) ?>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div class="content-box">
-                                                            <span>20-sep-2018</span>
-                                                            <a class="title">Conference at Barcelona</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="one-slide mx-auto">
-                                                <div class="blog text-center d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
-                                                    <div class="blog-box">
-                                                        <div href="" class="img-box blog-index-img-box">
-                                                            <a href="">
-                                                                <img class="img-responsive" src="<?= Yii::$app->homeUrl; ?>uploads/blog/blog1.png" alt="Chairman attends Gastech 2018 Conference at Barcelona, Spain">
-                                                            </a>
-                                                            <div class="overlay">
-                                                                <a class="read-more" href="">+</a>  
-                                                            </div>
-                                                        </div>
-                                                        <div class="content-box">
-                                                            <span>20-sep-2018</span>
-                                                            <a class="title">Conference at Barcelona</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="one-slide mx-auto">
-                                                <div class="blog text-center d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
-                                                    <div class="blog-box">
-                                                        <div href="" class="img-box blog-index-img-box">
-                                                            <a href="">
-                                                                <img class="img-responsive" src="<?= Yii::$app->homeUrl; ?>uploads/blog/blog1.png" alt="Chairman attends Gastech 2018 Conference at Barcelona, Spain">
-                                                            </a>
-                                                            <div class="overlay">
-                                                                <a class="read-more" href="">+</a>  
-                                                            </div>
-                                                        </div>
-                                                        <div class="content-box">
-                                                            <span>20-sep-2018</span>
-                                                            <a class="title">Conference at Barcelona</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="one-slide mx-auto">
-                                                <div class="blog text-center d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
-                                                    <div class="blog-box">
-                                                        <div href="" class="img-box blog-index-img-box">
-                                                            <a href="">
-                                                                <img class="img-responsive" src="<?= Yii::$app->homeUrl; ?>uploads/blog/blog1.png" alt="Chairman attends Gastech 2018 Conference at Barcelona, Spain">
-                                                            </a>
-                                                            <div class="overlay">
-                                                                <a class="read-more" href="">+</a>  
-                                                            </div>
-                                                        </div>
-                                                        <div class="content-box">
-                                                            <span>20-sep-2018</span>
-                                                            <a class="title">Conference at Barcelona</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                                        <?php
+                                                    }
+                                                }
+                                            }
+                                            ?>
                                         </div>
                                     </div>
                                 </div>

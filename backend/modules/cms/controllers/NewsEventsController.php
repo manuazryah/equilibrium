@@ -1,0 +1,150 @@
+<?php
+
+namespace backend\modules\cms\controllers;
+
+use Yii;
+use common\models\NewsEvents;
+use common\models\NewsEventsSearch;
+use yii\web\Controller;
+use yii\web\NotFoundHttpException;
+use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
+
+/**
+ * NewsEventsController implements the CRUD actions for NewsEvents model.
+ */
+class NewsEventsController extends Controller {
+
+    /**
+     * @inheritdoc
+     */
+    public function behaviors() {
+        return [
+            'verbs' => [
+                'class' => VerbFilter::className(),
+                'actions' => [
+                    'delete' => ['POST'],
+                ],
+            ],
+        ];
+    }
+
+    /**
+     * Lists all NewsEvents models.
+     * @return mixed
+     */
+    public function actionIndex() {
+        $searchModel = new NewsEventsSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
+        return $this->render('index', [
+                    'searchModel' => $searchModel,
+                    'dataProvider' => $dataProvider,
+        ]);
+    }
+
+    /**
+     * Displays a single NewsEvents model.
+     * @param integer $id
+     * @return mixed
+     */
+    public function actionView($id) {
+        return $this->render('view', [
+                    'model' => $this->findModel($id),
+        ]);
+    }
+
+    /**
+     * Creates a new NewsEvents model.
+     * If creation is successful, the browser will be redirected to the 'view' page.
+     * @return mixed
+     */
+    public function actionCreate() {
+        $model = new NewsEvents();
+        $model->setScenario('create');
+
+        if ($model->load(Yii::$app->request->post()) && Yii::$app->SetValues->Attributes($model)) {
+            $image = UploadedFile::getInstance($model, 'image');
+            $model->image = $image->extension;
+            $model->date = date('Y-m-d');
+            if ($model->validate() && $model->save()) {
+                if (!empty($image)) {
+                    $path = Yii::$app->basePath . '/../uploads/events/' . $model->id . '/';
+                    $size = [
+                        ['width' => 150, 'height' => 90, 'name' => 'small'],
+                        ['width' => 600, 'height' => 174, 'name' => 'image'],
+                    ];
+                    Yii::$app->UploadFile->UploadFile($model, $image, $path, $size);
+                }
+                Yii::$app->session->setFlash('success', "New Events/ News Added Successfully");
+                $model = new NewsEvents();
+            }
+        }return $this->render('create', [
+                    'model' => $model,
+        ]);
+    }
+
+    /**
+     * Updates an existing NewsEvents model.
+     * If update is successful, the browser will be redirected to the 'view' page.
+     * @param integer $id
+     * @return mixed
+     */
+    public function actionUpdate($id) {
+        $model = $this->findModel($id);
+        $image_ = $model->image;
+
+        if ($model->load(Yii::$app->request->post()) && Yii::$app->SetValues->Attributes($model)) {
+            $image = UploadedFile::getInstance($model, 'image');
+            if (!empty($image))
+                $model->image = $image->extension;
+            else
+                $model->image = $image_;
+            $model->date = date('Y-m-d');
+            if ($model->validate() && $model->save()) {
+                if (!empty($image)) {
+                    $path = Yii::$app->basePath . '/../uploads/events/' . $model->id . '/';
+                    $size = [
+                        ['width' => 150, 'height' => 90, 'name' => 'small'],
+                        ['width' => 600, 'height' => 174, 'name' => 'image'],
+                    ];
+                    Yii::$app->UploadFile->UploadFile($model, $image, $path, $size);
+                }
+            }
+            Yii::$app->session->setFlash('success', "New Events/ News Updated Successfully");
+            return $this->redirect(['update', 'id' => $model->id]);
+        }
+
+        return $this->render('update', [
+                    'model' => $model,
+        ]);
+    }
+
+    /**
+     * Deletes an existing NewsEvents model.
+     * If deletion is successful, the browser will be redirected to the 'index' page.
+     * @param integer $id
+     * @return mixed
+     */
+    public function actionDelete($id) {
+        $this->findModel($id)->delete();
+
+        return $this->redirect(['index']);
+    }
+
+    /**
+     * Finds the NewsEvents model based on its primary key value.
+     * If the model is not found, a 404 HTTP exception will be thrown.
+     * @param integer $id
+     * @return NewsEvents the loaded model
+     * @throws NotFoundHttpException if the model cannot be found
+     */
+    protected function findModel($id) {
+        if (($model = NewsEvents::findOne($id)) !== null) {
+            return $model;
+        } else {
+            throw new NotFoundHttpException('The requested page does not exist.');
+        }
+    }
+
+}

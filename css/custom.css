@@ -229,3 +229,81 @@ div.wpcf7 .ajax-loader{
 #upload_button input[type=file] {
     display:none;
 }
+#project-gallery .revGallery-anchor{
+    width: calc(100% / 4);
+}
+.blog-page .tab-content{
+    display: inline-block;
+    border: 1px solid #dddddd;
+    border-top: 0px;
+    padding-top: 15px;
+}
+.news-events-section{
+    padding: 95px 0px 100px;
+    background: #f6f6f6;
+}
+.news-events-section .slick-slide{
+    margin: 0 8px;
+}
+.news-events-section .blog-index-img-box{
+    padding: 25px 20px;
+    border: 10px solid #fff;
+    box-shadow: none;
+    overflow: hidden;
+}
+.news-events-section .blog-box .content-box{
+    background: #fff;
+    border: 1px solid transparent;
+    padding-bottom: 5px;
+}
+.news-events-section .blog-box .content-box span{
+    display: block;
+    text-align: left;
+    padding-top: 0px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #656565;
+}
+.news-events-section .blog-box .content-box a.title{
+    margin-bottom: 0;
+    margin: 0 0px;
+    padding: 4px 10px 7px 0px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #000;
+    display: block;
+}
+.news-events-section .img-box{
+    position: relative;
+}
+.news-events-section .img-box .overlay{
+    opacity: 0px;
+    visibility: hidden;
+    /*transition: all 300ms ease-in-out;*/
+    background: #353535d1;
+    position: absolute;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+.news-events-section .blog:hover .img-box .overlay{
+    /*transition: all 300ms ease-in-out;*/
+    opacity: 1;
+    visibility: visible !important;
+}
+.news-events-section .blog .overlay .read-more{
+    font-size: 25px;
+    background: #264894 none repeat scroll 0 0;
+    top: 40%;
+    color: #ffffff;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 30px;
+}

@@ -54,62 +54,46 @@ use common\components\MenuHeaderWidget;
                                     </ul>
                                     <div class="tab-content">
                                         <div class="tab-pane active" id="news">
-                                            <div class="blog-box col-md-4 col-sm-6  col-xs-12">
-                                                <div class="img-box blog-index-img-box">
-                                                    <img class="img-responsive" src="<?= Yii::$app->homeUrl; ?>uploads/blog/blog1.png" alt="Chairman attends Gastech 2018 Conference at Barcelona, Spain">
-                                                </div>
-                                                <div class="content-box">
-                                                    <h5>Chairman attends Gastech 2018 Conference at Barcelona, Spain</h5>
-                                                    <!--                                    <ul class="date">
-                                                                                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i>Mar 10 2018</li>
-                                                                                        </ul>-->
-                                                    <p>
-                                                        2019 edition of Gastech Exhibition & Conference is taking place in Barcelona 17 - 20 September 2018.  Mr. Mohammed Sahoo AlSuwaidi, Chairman  of Equilibrium Engineering Company attends this important conference.  <a target="_blank" href="http://www.gastechevent.com">http://www.gastechevent.com</a>
-                                                    </p>
-
-                                                    <!--<a href="">know more</a>-->                    
-                                                </div>
-                                            </div>
-                                            <div class="blog-box col-md-4 col-sm-6  col-xs-12">
-                                                <div class="img-box blog-index-img-box">
-                                                    <img class="img-responsive" src="<?= Yii::$app->homeUrl; ?>uploads/blog/blog2.png" alt="Dodsal awards Strategy and Technical Consultancy Services Contract to Abu Dhabi’s Equilibrium Engineering Consultancy">
-                                                </div>
-                                                <div class="content-box">
-                                                    <h5>Dodsal awards Strategy and Technical Consultancy Services Contract to Abu Dhabi’s Equilibrium Engineering Consultancy</h5>
-                                                    <p>
-                                                        Dodsal Hydrocarbons and Power (Tanzania), Dubai-headquartered Dodsal Group, awarded its contract for the Strategy and Technical Consultancy Services to Equilibrium Engineering Consultancy, Abu Dhabi for their oil and gas exploration on the RUVU Block. 
-                                                    </p>
-                                                </div>
-                                            </div>
+                                            <?php
+                                            if (!empty($news)) {
+                                                foreach ($news as $news_val) {
+                                                    if (!empty($news_val)) {
+                                                        ?>
+                                                        <div class="blog-box col-md-4 col-sm-6  col-xs-12">
+                                                            <div class="img-box blog-index-img-box">
+                                                                <img class="img-responsive" src="<?= Yii::$app->homeUrl; ?>uploads/events/<?= $news_val->id ?>/<?= $news_val->id ?>.<?= $news_val->image ?>" alt="Dodsal awards Strategy and Technical Consultancy Services Contract to Abu Dhabi’s Equilibrium Engineering Consultancy">
+                                                            </div>
+                                                            <div class="content-box">
+                                                                <h5><?= $news_val->title ?></h5>
+                                                                <?= $news_val->description ?>
+                                                            </div>
+                                                        </div>
+                                                        <?php
+                                                    }
+                                                }
+                                            }
+                                            ?>
                                         </div>
                                         <div class="tab-pane" id="events">
-                                            <div class="blog-box col-md-4 col-sm-6  col-xs-12">
-                                                <div class="img-box blog-index-img-box">
-                                                    <img class="img-responsive" src="<?= Yii::$app->homeUrl; ?>uploads/blog/blog1.png" alt="Chairman attends Gastech 2018 Conference at Barcelona, Spain">
-                                                </div>
-                                                <div class="content-box">
-                                                    <h5>Chairman attends Gastech 2018 Conference at Barcelona, Spain</h5>
-                                                    <!--                                    <ul class="date">
-                                                                                            <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i>Mar 10 2018</li>
-                                                                                        </ul>-->
-                                                    <p>
-                                                        2019 edition of Gastech Exhibition & Conference is taking place in Barcelona 17 - 20 September 2018.  Mr. Mohammed Sahoo AlSuwaidi, Chairman  of Equilibrium Engineering Company attends this important conference.  <a target="_blank" href="http://www.gastechevent.com">http://www.gastechevent.com</a>
-                                                    </p>
-
-                                                    <!--<a href="">know more</a>-->                    
-                                                </div>
-                                            </div>
-                                            <div class="blog-box col-md-4 col-sm-6  col-xs-12">
-                                                <div class="img-box blog-index-img-box">
-                                                    <img class="img-responsive" src="<?= Yii::$app->homeUrl; ?>uploads/blog/blog2.png" alt="Dodsal awards Strategy and Technical Consultancy Services Contract to Abu Dhabi’s Equilibrium Engineering Consultancy">
-                                                </div>
-                                                <div class="content-box">
-                                                    <h5>Dodsal awards Strategy and Technical Consultancy Services Contract to Abu Dhabi’s Equilibrium Engineering Consultancy</h5>
-                                                    <p>
-                                                        Dodsal Hydrocarbons and Power (Tanzania), Dubai-headquartered Dodsal Group, awarded its contract for the Strategy and Technical Consultancy Services to Equilibrium Engineering Consultancy, Abu Dhabi for their oil and gas exploration on the RUVU Block. 
-                                                    </p>
-                                                </div>
-                                            </div>
+                                            <?php
+                                            if (!empty($events)) {
+                                                foreach ($events as $events_val) {
+                                                    if (!empty($events_val)) {
+                                                        ?>
+                                                        <div class="blog-box col-md-4 col-sm-6  col-xs-12">
+                                                            <div class="img-box blog-index-img-box">
+                                                                <img class="img-responsive" src="<?= Yii::$app->homeUrl; ?>uploads/events/<?= $events_val->id ?>/<?= $events_val->id ?>.<?= $events_val->image ?>" alt="Dodsal awards Strategy and Technical Consultancy Services Contract to Abu Dhabi’s Equilibrium Engineering Consultancy">
+                                                            </div>
+                                                            <div class="content-box">
+                                                                <h5><?= $events_val->title ?></h5>
+                                                                <?= $events_val->description ?>
+                                                            </div>
+                                                        </div>
+                                                        <?php
+                                                    }
+                                                }
+                                            }
+                                            ?>
                                         </div>
                                     </div>
                                 </div>

@@ -76,6 +76,8 @@ class SiteController extends Controller {
         $contact_info = \common\models\ContactInfo::find()->where(['id' => 1])->one();
         $home_page_content = \common\models\HomeManagement::find()->where(['id' => 1])->one();
         $work_process = WorkProcess::find()->all();
+        $news = \common\models\NewsEvents::find()->where(['type' => 1])->all();
+        $events = \common\models\NewsEvents::find()->where(['type' => 2])->all();
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post())) {
             if (isset($_POST['g-recaptcha-response']))
@@ -93,6 +95,8 @@ class SiteController extends Controller {
                     'contact_info' => $contact_info,
                     'home_page_content' => $home_page_content,
                     'work_process' => $work_process,
+                    'news' => $news,
+                    'events' => $events,
         ]);
     }
 
@@ -101,14 +105,26 @@ class SiteController extends Controller {
     }
 
     public function actionProjects() {
-        return $this->render('projects');
+        $our_projects = \common\models\OurProjects::find()->all();
+        return $this->render('projects', [
+                    'our_projects' => $our_projects,
+        ]);
     }
-    public function actionProjectGallery() {
-        return $this->render('projects-gallery');
+
+    public function actionProjectGallery($project = NULL) {
+        $our_projects = \common\models\OurProjects::find()->where(['canonical_name' => $project])->one();
+        return $this->render('projects-gallery', [
+                    'our_projects' => $our_projects,
+        ]);
     }
 
     public function actionEvents() {
-        return $this->render('news-events');
+        $news = \common\models\NewsEvents::find()->where(['type' => 1])->all();
+        $events = \common\models\NewsEvents::find()->where(['type' => 2])->all();
+        return $this->render('news-events', [
+                    'news' => $news,
+                    'events' => $events,
+        ]);
     }
 
     /**

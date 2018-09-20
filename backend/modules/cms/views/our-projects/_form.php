@@ -22,7 +22,10 @@ use yii\widgets\ActiveForm;
         </div>
     </div>
     <div class="row">
-        <div class='col-md-4 col-sm-6 col-xs-12 left_padd'>  
+        <div class='col-md-6 col-sm-6 col-xs-12 left_padd'>  
+            <?= $form->field($model, 'canonical_name')->textInput(['readonly' => true]) ?>
+        </div>
+        <div class='col-md-6 col-sm-6 col-xs-12 left_padd'>  
             <?= $form->field($model, 'images[]', ['options' => ['class' => 'form-group'], 'template' => '{label}<label>Gallery Images [ File Size :( 1920x1080 ) ]</label>{input}{error}'])->fileInput(['multiple' => true])->label(FALSE) ?>
 
         </div>
@@ -85,5 +88,18 @@ use yii\widgets\ActiveForm;
                 }
             });
         });
+
+        $('#ourprojects-project_name').keyup(function () {
+            var name = slug($(this).val());
+            $('#ourprojects-canonical_name').val(slug($(this).val()));
+        });
     });
+    var slug = function (str) {
+        var $slug = '';
+        var trimmed = $.trim(str);
+        $slug = trimmed.replace(/[^a-z0-9-]/gi, '-').
+                replace(/-+/g, '-').
+                replace(/^-|-$/g, '');
+        return $slug.toLowerCase();
+    }
 </script>

@@ -111,6 +111,12 @@ AppAsset::register($this);
                         <?= Html::a('<i class="fa fa-map-marker"></i> <span class="title">Contact Info</span>', ['/cms/contact-info/update', 'id' => 1], ['class' => 'title']) ?>
                     </li>
                     <li>
+                        <?= Html::a('<i class="fa fa-product-hunt"></i> <span class="title">Our Projects</span>', ['/cms/our-projects/index'], ['class' => 'title']) ?>
+                    </li>
+                    <li>
+                        <?= Html::a('<i class="fa fa-calendar"></i> <span class="title">News & Events</span>', ['/cms/news-events/index'], ['class' => 'title']) ?>
+                    </li>
+                    <li>
                         <a href="">
                             <i class="fa fa-wrench"></i>
                             <span class="title">Services</span>
@@ -258,6 +264,9 @@ AppAsset::register($this);
                         </li>
                         <li>
                             <?= Html::a('<i class="fa fa-product-hunt"></i> <span class="title">Our Projects</span>', ['/cms/our-projects/index'], ['class' => 'title']) ?>
+                        </li>
+                        <li>
+                            <?= Html::a('<i class="fa fa-calendar"></i> <span class="title">News & Events</span>', ['/cms/news-events/index'], ['class' => 'title']) ?>
                         </li>
                         <li>
                             <a href="">

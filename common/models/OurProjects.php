@@ -32,7 +32,7 @@ class OurProjects extends \yii\db\ActiveRecord {
     public function rules() {
         return [
             [['status', 'CB', 'UB'], 'integer'],
-            [['DOC', 'DOU'], 'safe'],
+            [['DOC', 'DOU', 'canonical_name'], 'safe'],
             [['project_name', 'client'], 'required'],
             [['project_name', 'client'], 'string', 'max' => 1000],
             [['images'], 'file', 'skipOnEmpty' => true, 'extensions' => 'jpg, gif, png,jpeg', 'maxFiles' => 100],

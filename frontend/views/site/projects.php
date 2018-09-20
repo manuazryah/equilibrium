@@ -71,19 +71,31 @@ use common\components\MenuHeaderWidget;
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr class="default-row">
-                                                        <td class="default-col">
-                                                            1 </td>
-                                                        <td class="default-col">
-                                                             <?= Html::a('Strategy & Technical Consultancy Services for Project FORT', ['/site/project-gallery'], ['class' => '']) ?>
-                                                        </td>
-                                                        <td class="default-col">
-                                                            Client: Dodsal, Tanzania
-                                                        </td>
-        <!--                                                <td class="default-col">
-                                                            Design Engineering , Supply, Installation , Testing and Commisioning of Mechannical, Electrical &amp; Plumbing Works
-                                                        </td>-->
-                                                    </tr>
+                                                    <?php
+                                                    if (!empty($our_projects)) {
+                                                        $k = 0;
+                                                        foreach ($our_projects as $our_project) {
+                                                            if (!empty($our_project)) {
+                                                                $k++;
+                                                                ?>
+                                                                <tr class="default-row">
+                                                                    <td class="default-col">
+                                                                        <?= $k ?></td>
+                                                                    <td class="default-col">
+                                                                        <?= Html::a($our_project->project_name, ['/site/project-gallery', 'project' => $our_project->canonical_name], ['class' => '']) ?>
+                                                                    </td>
+                                                                    <td class="default-col">
+                                                                        Client: <?= $our_project->client ?>
+                                                                    </td>
+                    <!--                                                <td class="default-col">
+                                                                        Design Engineering , Supply, Installation , Testing and Commisioning of Mechannical, Electrical &amp; Plumbing Works
+                                                                    </td>-->
+                                                                </tr>
+                                                                <?php
+                                                            }
+                                                        }
+                                                    }
+                                                    ?>
                                                 </tbody>
                                             </table>
                                         </div>
