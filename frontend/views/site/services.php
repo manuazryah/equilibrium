@@ -102,7 +102,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <div class="auto-container">
                         <div class="kc-wrap-columns">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="sec-title">
+                                <div data-aos="flip-down" class="sec-title">
                                     <h2>BUSINESS ASSOCIATIONS</h2>
                                 </div>
                             </div>

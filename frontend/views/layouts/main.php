@@ -9,6 +9,7 @@ use common\models\Sectors;
 
 AppAsset::register($this);
 $action = Yii::$app->controller->id . '/' . Yii::$app->controller->action->id;
+$contact_data = common\models\ContactInfo::findOne(1);
 $home_management = HomeManagement::findOne(1);
 $sectors = Sectors::find()->where(['status' => 1])->limit('6')->all();
 ?>
@@ -25,6 +26,8 @@ $sectors = Sectors::find()->where(['status' => 1])->limit('6')->all();
         <script src="<?= Yii::$app->homeUrl; ?>js/jquery.js"></script>
         <script src="<?= Yii::$app->homeUrl; ?>js/jquery.themepunch.tools.min.js"></script>
         <script src="<?= Yii::$app->homeUrl; ?>js/jquery.themepunch.revolution.min.js"></script>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css' type='text/css' />
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css'>
         <?php $this->head() ?>
     </head>
     <div class="loader"></div>
@@ -39,13 +42,13 @@ $sectors = Sectors::find()->where(['status' => 1])->limit('6')->all();
                         <div class="inner-container clearfix">
                             <div class="top-left">
                                 <ul class="clearfix">
-                                    <li><a href="javascript:;"><span class="icon fa fa-volume-control-phone"></span> Call us: <?= $home_management->header_phone ?></a></li>
+                                    <li><a href="javascript:;"><span class="icon fa fa-volume-control-phone"></span> Call us: <?= $contact_data->phone ?></a></li>
                                 </ul>
                             </div>
 
                             <div class="top-right clearfix">
                                 <ul class="social-icon-one">
-                                    <li><a href=""><span class="icon fa fa-envelope-o"></span> <?= $home_management->header_email ?></a></li>
+                                    <li><a href=""><span class="icon fa fa-envelope-o"></span> <?= $contact_data->email ?></a></li>
 <!--                                    <li><a href="">Solutions</a> <span>:</span></li>
                                     <li><a href="">Products</a> <span>:</span></li>
                                     <li><a href="">News & Events</a> <span>:</span></li>
@@ -108,6 +111,12 @@ $sectors = Sectors::find()->where(['status' => 1])->limit('6')->all();
                                         </li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page <?= $action == 'site/services' ? 'current' : '' ?>">
                                             <?= Html::a('Services', ['/site/services', 'service' => 'our-services'], ['class' => 'hvr-underline-from-left1']) ?>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page <?= $action == 'site/projects' ? 'current' : '' ?>">
+                                            <?= Html::a('Projects', ['/site/projects'], ['class' => 'hvr-underline-from-left1']) ?>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page <?= $action == 'site/events' ? 'current' : '' ?>">
+                                            <?= Html::a('News & Events', ['/site/events'], ['class' => 'hvr-underline-from-left1']) ?>
                                         </li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page <?= $action == 'site/careers' ? 'current' : '' ?>">
                                             <?= Html::a('Careers', ['/site/careers'], ['class' => 'hvr-underline-from-left1']) ?>
@@ -179,7 +188,12 @@ $sectors = Sectors::find()->where(['status' => 1])->limit('6')->all();
                                         <section id="text-2" class="widget widget_text foot-logo">
                                             <div class="textwidget">
                                                 <p><img src="<?= Yii::$app->homeUrl; ?>images/footlogo.png" alt="logo" >
-                                                    <br> <?= $home_management->about_content?>.</p>
+                                                    <br>
+                                                    Equilibrium EQEC is an ISO certified OHS 2118 company.
+                                                </p>
+                                                <div class="col-xs-12 img-box pad0">
+                                                    <img src="<?= Yii::$app->homeUrl; ?>images/certified.jpg" class="img-responsive"/>
+                                                </div>
                                             </div>
                                         </section>
                 <!--                        <section id="zozo_social_widget-2" class="widget zozo_social_widget">
@@ -222,16 +236,16 @@ $sectors = Sectors::find()->where(['status' => 1])->limit('6')->all();
                                             <h3 class="widget-title">Social media</h3>
                                             <div class="menu-services-menu-container">
                                                 <ul id="menu-services-menu" class="menu social-menu">
-                                                    <?php if($home_management->facebook)?>
-                                                    <li><a href="<?= $home_management->facebook?>" target="_blank" class="social-fb"><i class="fa fa-facebook"></i>Facebook</a></li>
-                                                     <?php if($home_management->twitter)?>
-                                                    <li><a href="<?= $home_management->twitter?>" target="_blank" class="social-twitter"><i class="fa fa-twitter"></i>Twiter</a></li>
-                                                     <?php if($home_management->instagram)?>
-                                                    <li><a href="<?= $home_management->instagram?>" target="_blank" class="social-instagram"><i class="fa fa-instagram"></i>Instagram</a></li>
-                                                     <?php if($home_management->pintrest)?>
-                                                    <li><a href="<?= $home_management->pintrest?>" target="_blank" class="social-pinterest"><i class="fa fa-pinterest"></i>Pintrest</a></li>
-                                                     <?php if($home_management->linkedin)?>
-                                                    <li><a href="<?= $home_management->linkedin?>" target="_blank" class="social-linkedin"><i class="fa fa-linkedin"></i>Linkedin</a></li>
+                                                    <?php if ($home_management->facebook)  ?>
+                                                    <li><a href="<?= $home_management->facebook ?>" target="_blank" class="social-fb"><i class="fa fa-facebook"></i>Facebook</a></li>
+                                                    <?php if ($home_management->twitter)  ?>
+                                                    <li><a href="<?= $home_management->twitter ?>" target="_blank" class="social-twitter"><i class="fa fa-twitter"></i>Twiter</a></li>
+                                                    <?php if ($home_management->instagram)  ?>
+                                                    <li><a href="<?= $home_management->instagram ?>" target="_blank" class="social-instagram"><i class="fa fa-instagram"></i>Instagram</a></li>
+                                                    <?php if ($home_management->pintrest)  ?>
+                                                    <li><a href="<?= $home_management->pintrest ?>" target="_blank" class="social-pinterest"><i class="fa fa-pinterest"></i>Pintrest</a></li>
+                                                    <?php if ($home_management->linkedin)  ?>
+                                                    <li><a href="<?= $home_management->linkedin ?>" target="_blank" class="social-linkedin"><i class="fa fa-linkedin"></i>Linkedin</a></li>
                                                 </ul>
                                             </div>
                                         </section>
@@ -252,7 +266,7 @@ $sectors = Sectors::find()->where(['status' => 1])->limit('6')->all();
                                         </div>
                                         <div id="text-3" class="widget widget_text">
                                             <div class="textwidget">
-                                                <p>We don’t do mail to spam &amp; your mail
+                                                <p>We donâ€™t do mail to spam &amp; your mail
                                                     id is confidential.</p>
                                             </div>
                                         </div>
@@ -286,6 +300,7 @@ $sectors = Sectors::find()->where(['status' => 1])->limit('6')->all();
 
 <?php $this->endPage() ?>
 <script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
 <script>
     jQuery(document).ready(function () {
         jQuery('#subscribe-mail-1').on('submit', function (e) {
@@ -304,7 +319,6 @@ $sectors = Sectors::find()->where(['status' => 1])->limit('6')->all();
                         $('#subscribe_email-1').val('');
                     } else {
                         $('.subscribe_email-1_error').html(email + ' already subscribed');
-                        $('#subscribe_email-1').val('');
                     }
                 }
             });
@@ -331,10 +345,10 @@ $sectors = Sectors::find()->where(['status' => 1])->limit('6')->all();
         function setHeight() {
             windowHeight = $(window).innerHeight();
             $('.item').css({
-                'height': $(this).height() - 50
+                'height': $(this).height()
             });
             $('.slide-image').css({
-                'height': $(this).height() - 50
+                'height': $(this).height()
             });
         }
         ;
@@ -345,4 +359,76 @@ $sectors = Sectors::find()->where(['status' => 1])->limit('6')->all();
             });
         }
     });
+
+    $(document).ready(function () {
+        $(".blog-carousel").slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            arrows: false,
+            dots: false,
+            pauseOnHover: true,
+            prevArrow: $(".blog-carousel-controls .prev"),
+            nextArrow: $(".blog-carousel-controls .next"),
+            responsive: [{
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }]
+        });
+    });
+
+
+</script>
+<script>
+
+
+
+    jQuery(window).scroll(function () {
+        var scrlTop = jQuery(window).scrollTop();
+
+
+        $window = jQuery(window);
+
+        function myanimations(doelement, doclass) {
+            $element = jQuery(doelement);
+
+            $element.each(function () {
+                $thisone = jQuery(this);
+                if ($thisone.offset().top + 200 < ($window.height() + $window.scrollTop()) &&
+                        ($thisone.offset().top + $element.outerHeight()) + 170 > $window.scrollTop())
+                {
+                    $thisone.removeClass('fadeOut');
+                    $thisone.addClass('animated');
+                    $thisone.addClass(doclass);
+                } else {
+                    $thisone.removeClass(doclass);
+                    $thisone.addClass('fadeOut');
+                }
+            });
+        }
+
+        myanimations('.sec-title', 'fadeInDown');
+//        myanimations('.about-section .text', 'fadeInUp');
+        myanimations('.chairmans-msg-cont', 'fadeInRight');
+//        myanimations('.about-block .lower-box h3', 'bounce');
+
+    });
+
+</script>
+<script>
+    AOS.init();
 </script>

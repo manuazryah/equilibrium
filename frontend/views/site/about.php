@@ -11,7 +11,7 @@ use common\components\MenuHeaderWidget;
         <!--<div class="text">History to our industry</div>-->
     </div>
     <!--Page Info-->
-    <div class="header-lower">
+    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="header-lower">
 
         <div class="auto-container">
             <div class="nav-outer clearfix">
@@ -45,7 +45,7 @@ use common\components\MenuHeaderWidget;
                     <section class="about-section-two">
                         <div class="auto-container">
                             <!--Sec Title-->
-                            <div class="sec-title">
+                            <div data-aos="flip-down" class="sec-title">
                                 <h2>Who we are</h2>
                             </div>
                             <div class="row clearfix">
@@ -76,7 +76,7 @@ use common\components\MenuHeaderWidget;
                                                 </div>
                                             </div>
                                             <!--Content Column-->
-                                            <div class="content-column col-md-6 col-sm-6 col-xs-12">
+                                            <div data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500" class="content-column col-md-6 col-sm-6 col-xs-12">
                                                 <h3><a href="#">Our Mission</a></h3>
                                                 <div class="text">
                                                     <?= $about_content->our_mission ?>
@@ -97,7 +97,7 @@ use common\components\MenuHeaderWidget;
                                                 </div>
                                             </div>
                                             <!--Content Column-->
-                                            <div class="content-column col-md-6 col-sm-6 col-xs-12">
+                                            <div data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500" class="content-column col-md-6 col-sm-6 col-xs-12">
                                                 <h3><a href="#">Our Vision</a></h3>
                                                 <div class="text">
                                                     <?= $about_content->our_vision ?>
@@ -131,16 +131,16 @@ use common\components\MenuHeaderWidget;
                             <!--Content Column-->
                             <div class="content-column">
                                 <div class="inner-box">
-                                    <div class="sec-title">
+                                    <div data-aos="flip-down" class="sec-title">
                                         <h2>Why Choose Us</h2>
                                     </div>
                                     <div class="text">
                                         <?= $about_content->why_choose_us ?>
                                     </div>
                                     <ul class="choose-info">
-                                        <li><span class="icon flaticon-microscope"></span>Advanced <br> Technology</li>
-                                        <li><span class="icon flaticon-time-passing"></span>Delivery <br> On Time</li>
-                                        <li><span class="icon flaticon-engineer"></span>Certified <br> Engineers</li>
+                                        <li data-aos="flip-right" data-aos-easing="linear" data-aos-duration="1500"><span class="icon flaticon-microscope"></span>Advanced <br> Technology</li>
+                                        <li data-aos="flip-up" data-aos-easing="linear" data-aos-duration="1500"><span class="icon flaticon-time-passing"></span>Delivery <br> On Time</li>
+                                        <li data-aos="flip-left" data-aos-easing="linear" data-aos-duration="1500"><span class="icon flaticon-engineer"></span>Certified <br> Engineers</li>
                                     </ul>
                                 </div>
                             </div>
@@ -161,7 +161,7 @@ use common\components\MenuHeaderWidget;
                         <div class="outer-container clearfix">
                             <div class="content-column">
                                 <div class="inner-box">
-                                    <div class="sec-title">
+                                    <div data-aos="flip-down" class="sec-title">
                                         <h2>What do say our Chairman ?</h2>
                                     </div>
                                     <div class="text">
@@ -196,16 +196,41 @@ use common\components\MenuHeaderWidget;
                     <div class="auto-container">
                         <div class="kc-wrap-columns circle-listing">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"  id="core_value">
-                                <div class="sec-title">
+                                <div data-aos="flip-down" class="sec-title">
                                     <h2>OUR CORE VALUES</h2>
                                 </div>
                                 <?= $about_content->our_core_values ?>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-                                <div class="sec-title">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 certificate-page-section">
+                                <div data-aos="flip-down" class="sec-title">
                                     <h2>OUR CERTIFICATIONS</h2>
                                 </div>
-                                <?= $about_content->our_certificates ?>
+                                <div class="nak-gallery nlg1" id="gallery">
+                                    <a href="<?= Yii::$app->homeUrl; ?>uploads/certificates/ISO-9001-2015.jpg" class="gallery-item revGallery-anchor" title="">
+                                        <img class="img-responsive" src="<?= Yii::$app->homeUrl; ?>uploads/certificates/ISO-9001-2015.jpg">
+                                        <div style="overflow:hidden; background: white;">
+                                            <div class="nak-gallery-poster" style="background-image:url('<?= Yii::$app->homeUrl; ?>uploads/certificates/ISO-9001-2015.jpg');background-size:contain;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0"></div>
+                                        </div>
+                                        <div class="gal-overlay"></div>
+                                        <span class="certificate-name">ISO 9001 - 2015</span>
+                                    </a>	
+                                    <a href="<?= Yii::$app->homeUrl; ?>uploads/certificates/ISO-14001-2015.jpg" class="gallery-item revGallery-anchor" title="">
+                                        <img class="img-responsive" src="<?= Yii::$app->homeUrl; ?>uploads/certificates/ISO-14001-2015.jpg">
+                                        <div style="overflow:hidden; background: white;">
+                                            <div class="nak-gallery-poster" style="background-image:url('<?= Yii::$app->homeUrl; ?>uploads/certificates/ISO-14001-2015.jpg');background-size:contain;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0"></div>
+                                        </div>
+                                        <div class="gal-overlay"></div>
+                                        <span class="certificate-name">ISO 14001 - 2015</span>
+                                    </a>	
+                                    <a href="<?= Yii::$app->homeUrl; ?>uploads/certificates/OSHAS-18001-2007.jpg" class="gallery-item revGallery-anchor" title="">
+                                        <img class="img-responsive" src="<?= Yii::$app->homeUrl; ?>uploads/certificates/OSHAS-18001-2007.jpg">
+                                        <div style="overflow:hidden; background: white;">
+                                            <div class="nak-gallery-poster" style="background-image:url('<?= Yii::$app->homeUrl; ?>uploads/certificates/OSHAS-18001-2007.jpg');background-size:contain;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0"></div>
+                                        </div>
+                                        <div class="gal-overlay"></div>
+                                        <span class="certificate-name">OSHAS 18001 - 2007</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -222,7 +247,7 @@ use common\components\MenuHeaderWidget;
                         <!--Clients Section-->
                         <section class="clients-section">
                             <div class="auto-container">
-                                <div class="sec-title">
+                                <div data-aos="flip-down" class="sec-title">
                                     <h2>OUR PARTNERS</h2>
                                 </div>
                                 <div class="sponsors-outer">

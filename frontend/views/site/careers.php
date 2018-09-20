@@ -7,32 +7,32 @@ use yii\widgets\ActiveForm;
 ?>
 
 <!--Page Title-->
-<section id="banner" class="page-title careers-page-banner banner" style="background-image:url(<?= yii::$app->homeUrl; ?>images/background/careers.jpg);">
+<section id="banner" class="page-title careers-page-banner" style="background-image:url(<?= yii::$app->homeUrl; ?>images/background/careers.jpg);">
     <div class="auto-container">
         <h1>Careers</h1>
         <!--<div class="text">lorem ipsum dolor sit amet</div>-->
     </div>
     <div class="header-lower">
 
-    <div class="auto-container">
-        <div class="nav-outer clearfix">
-            <!-- Main Menu -->
-            <nav class="main-menu">
-                <div class="navbar-header">
-                    <!-- Toggle Button -->
-                    <button id="mobile-menu" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
+        <div class="auto-container">
+            <div class="nav-outer clearfix">
+                <!-- Main Menu -->
+                <nav class="main-menu">
+                    <div class="navbar-header">
+                        <!-- Toggle Button -->
+                        <button id="mobile-menu" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
 
-                <?= MenuHeaderWidget::widget() ?>
-            </nav>
-            <!-- Main Menu End-->
+                    <?= MenuHeaderWidget::widget() ?>
+                </nav>
+                <!-- Main Menu End-->
+            </div>
         </div>
     </div>
-</div>
 </section>
 <!--End Page Title-->
 
@@ -54,13 +54,20 @@ use yii\widgets\ActiveForm;
                                             <div class="sidebar-blog-category project-page-section">
                                                 <h5 class="title">Sectors</h5>
                                                 <ul class="blog-cat">
-                                                    <li class=""><button type="button" class="button is-checked" data-filter="">All</button></li>
+                                                    <li class="have_career"><button type="button" class="button is-checked" data-filter="">All</button></li>
                                                     <?php
                                                     if ($sectors) {
                                                         $i = 0;
                                                         foreach ($sectors as $sector) {
                                                             ?>
-                                                            <li class=""><button type="button" class="button" data-filter=".Sector_<?= $i ?>"><?= $sector->name ?> </button></li>
+                                                            <?php
+                                                            $careers = Careers::find()->where(['sector_id' => $sector->id, 'status' => 1])->all();
+                                                            if ($careers) {
+                                                                ?>
+                                                                <li class="have_career"><button type="button" class="button" data-filter=".Sector_<?= $i ?>"><?= $sector->name ?> </button></li>
+                                                            <?php } else { ?>
+                                                                <li class="no_career"><button type="button" class="button" data-filter=".Sector_empty"><?= $sector->name ?> </button></li>
+                                                            <?php } ?>
                                                             <?php
                                                             $i++;
                                                         }
@@ -68,7 +75,7 @@ use yii\widgets\ActiveForm;
                                                     ?>
                                                 </ul>
                                             </div>
-                                            <?php //include './includes/service_menu.php';    ?>
+                                            <?php //include './includes/service_menu.php';     ?>
                                         </div>
                                         <div id="bunch_brochures-2" class="widget sidebar-widget widget_bunch_brochures">
                                             <!--Brochure-->
@@ -106,11 +113,13 @@ use yii\widgets\ActiveForm;
                                                 $i = 0;
                                                 foreach ($sectors as $sector) {
                                                     ?>
-                                                    <div class="gallery-item revGallery-anchor Sector_<?= $i ?>">
-                                                        <div class="job_post_main_wrapper">
-                                                            <?php
-                                                            $careers = Careers::find()->where(['sector_id' => $sector->id, 'status' => 1])->all();
-                                                            if ($careers) {
+                                                    <?php
+                                                    $careers = Careers::find()->where(['sector_id' => $sector->id, 'status' => 1])->all();
+                                                    if ($careers) {
+                                                        ?>
+                                                        <div class="gallery-item revGallery-anchor Sector_<?= $i ?>">
+                                                            <div class="job_post_main_wrapper">
+                                                                <?php
                                                                 foreach ($careers as $career) {
                                                                     ?>
                                                                     <div class="row">
@@ -129,7 +138,7 @@ use yii\widgets\ActiveForm;
                                                                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                                             <div class="job_post_right_btn_wrapper">
                                                                                 <ul>
-                                                                                     <!--<li class="post-button"><a>View More</a></li>-->
+                                                                                    <!--<li class="post-button"><a>View More</a></li>-->
                                                                                     <li class="post-button"><a role="button" data-toggle="modal" class="career" job_id="<?= yii::$app->EncryptDecrypt->Encrypt('encrypt', $career->id) ?>" data-target="#modal-1354">Apply</a></li>
                                                                                 </ul>
                                                                             </div>
@@ -137,31 +146,39 @@ use yii\widgets\ActiveForm;
                                                                     </div>
                                                                 <?php }
                                                                 ?>
-                                                            <?php } else { ?>
-                                                                <div class="row">
-                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                        <div class="job_post_side_img">
-                                                                            <img src="<?= yii::$app->homeUrl; ?>images/Chairman1bg.jpg.png" alt="post_img">
-                                                                        </div>
-                                                                        <div class="job_post_right_cont">
-                                                                            <h4>No Job is opening now!</h4>
-                                                                            <!--<h4>Senior Reservoir Enginer(1 - 2 Yrs Exp.)</h4>-->
-                                                                            <p></p>
-                                                                            <span> </span>
 
-                                                                        </div>
-                                                                    </div>
-
-                                                                </div>
-                                                            <?php }
-                                                            ?>
+                                                            </div>
                                                         </div>
-                                                    </div>	
+                                                    <?php } ?>
                                                     <?php
                                                     $i++;
                                                 }
                                             }
                                             ?>
+                                            <!--************* Empty careers**************************-->
+                                            <div class="gallery-item revGallery-anchor Sector_empty hide">
+                                                <div class="job_post_main_wrapper">
+
+                                                    <div class="row">
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                            <div class="job_post_side_img">
+                                                                <img src="<?= yii::$app->homeUrl; ?>images/Chairman1bg.jpg.png" alt="post_img">
+                                                            </div>
+                                                            <div class="job_post_right_cont">
+                                                                <h4>No Job is opening now!</h4>
+                                                                <!--<h4>Senior Reservoir Enginer(1 - 2 Yrs Exp.)</h4>-->
+                                                                <p></p>
+                                                                <span> </span>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <!--**************Empty careers end*********************-->
+
                                         </div>
 
 
@@ -239,10 +256,17 @@ use yii\widgets\ActiveForm;
     </div>
 </div>
 <script>
-    $('document').ready(function () {
+    jQuery('document').ready(function () {
         $('.career').click(function () {
             var job = $(this).attr('job_id');
             $('#careerjob-career_id').val(job);
+        });
+
+        $('.no_career').click(function () {
+            $('.Sector_empty').removeClass('hide');
+        });
+        $('.have_career').click(function () {
+            $('.Sector_empty').addClass('hide');
         });
     });
 </script>

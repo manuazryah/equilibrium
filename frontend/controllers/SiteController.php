@@ -14,6 +14,7 @@ use common\models\ContactForm;
 use app\models\UploadForm;
 use yii\web\UploadedFile;
 use common\models\CareerJob;
+use common\models\WorkProcess;
 
 /**
  * Site controller
@@ -74,6 +75,7 @@ class SiteController extends Controller {
         $about_content = \common\models\About::find()->where(['id' => 1])->one();
         $contact_info = \common\models\ContactInfo::find()->where(['id' => 1])->one();
         $home_page_content = \common\models\HomeManagement::find()->where(['id' => 1])->one();
+        $work_process = WorkProcess::find()->all();
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post())) {
             if (isset($_POST['g-recaptcha-response']))
@@ -90,11 +92,23 @@ class SiteController extends Controller {
                     'about_content' => $about_content,
                     'contact_info' => $contact_info,
                     'home_page_content' => $home_page_content,
+                    'work_process' => $work_process,
         ]);
     }
 
     public function actionChairmansMessage() {
         return $this->render('chairmans');
+    }
+
+    public function actionProjects() {
+        return $this->render('projects');
+    }
+    public function actionProjectGallery() {
+        return $this->render('projects-gallery');
+    }
+
+    public function actionEvents() {
+        return $this->render('news-events');
     }
 
     /**
@@ -221,9 +235,9 @@ class SiteController extends Controller {
                     $headers .= "Content-type: text/html; charset=iso-8859-1" . "\r\n" .
                             "From: no-replay@eqec.ae";
                     mail($to, $subject, $message, $headers);
-                    echo json_encode(array('msg'=>'success'));
-                }else{
-                    echo json_encode(array('msg'=>'failed','error'=>'Email already used'));
+                    echo json_encode(array('msg' => 'success'));
+                } else {
+                    echo json_encode(array('msg' => 'failed', 'error' => 'Email already used'));
                 }
             }
         }

@@ -18,8 +18,14 @@ use yii\helpers\Html;
         <li class="menu-item menu-item-type-post_type menu-item-object-page <?= $action == 'site/sectors' ? 'current' : '' ?>">
             <?= Html::a('Sectors', ['/site/sectors', 'sector' => 'oil-gas-engineering'], ['class' => 'hvr-underline-from-left1']) ?>
         </li>
-        <li class="menu-item menu-item-type-post_type menu-item-object-page <?= $action == 'site/ervices' ? 'current' : '' ?>">
+        <li class="menu-item menu-item-type-post_type menu-item-object-page <?= $action == 'site/services' ? 'current' : '' ?>">
             <?= Html::a('Services', ['/site/services', 'service' => 'our-services'], ['class' => 'hvr-underline-from-left1']) ?>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page <?= $action == 'site/projects' ? 'current' : '' ?>">
+            <?= Html::a('Projects', ['/site/projects'], ['class' => 'hvr-underline-from-left1']) ?>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page <?= $action == 'site/events' ? 'current' : '' ?>">
+            <?= Html::a('News & Events', ['/site/events'], ['class' => 'hvr-underline-from-left1']) ?>
         </li>
         <li class="menu-item menu-item-type-post_type menu-item-object-page <?= $action == 'site/careers' ? 'current' : '' ?>">
             <?= Html::a('Careers', ['/site/careers'], ['class' => 'hvr-underline-from-left1']) ?>

@@ -924,3 +924,1238 @@ $_SERVER = [
     ],
     'argc' => 1,
 ]
+[21-Jun-2018 08:14:51 UTC] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home3/eqecae/public_html/index.php(15): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'CONTENT_LENGTH' => '22',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8',
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9',
+    'HTTP_COOKIE' => 'timezone=Asia/Kolkata; _csrf-frontend=c7915128d0a886ce57d88659c7b9e83b939395e0ed65274e868ad4759cec872aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22_827vXFf5d2DKbHFvfKJ-Og2h1CK5iQO%22%3B%7D; advanced-backend=ng804c1c9hsl23mivp45ev09s3; _csrf-backend=f6df96be23478d8d302f4db45584577e83c8f89e3a611a6ece1a6b1d319ffb60a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yKhScxNsIBJ3RyoaWRYhdRZWO7b5UVWy%22%3B%7D',
+    'HTTP_HOST' => 'eqec.ae',
+    'HTTP_ORIGIN' => 'http://eqec.ae',
+    'HTTP_REFERER' => 'http://eqec.ae/sectors/oil-gas-engineering',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => '3w3VZeiqPOv14Zp_imtzoSpxK_B8OZRHTIbVTbj_YVSANedSnvJ6jcCFqDvBCTvnXBdgulF283Ukt5YGjZYwGw==',
+    'HTTP_X_FORWARDED_FOR' => '162.241.218.124',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php70/root/etc:/opt/cpanel/ea-php70/root/etc/php.d:.',
+    'QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WyteeyEeG1xviEoLSSjWLQAAAJ4',
+    'REDIRECT_URL' => '/site/subscribe-mail',
+    'REMOTE_ADDR' => '122.164.103.216',
+    'REMOTE_PORT' => '43583',
+    'REQUEST_METHOD' => 'POST',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/site/subscribe-mail',
+    'SCRIPT_FILENAME' => '/home3/eqecae/public_html/index.php',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_ADDR' => '162.241.218.124',
+    'SERVER_ADMIN' => 'webmaster@eqec.ae',
+    'SERVER_NAME' => 'eqec.ae',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at eqec.ae Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'WyteeyEeG1xviEoLSSjWLQAAAJ4',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1529568891.741425037384033203125,
+    'REQUEST_TIME' => 1529568891,
+    'argv' => [
+        'site/subscribe-mail',
+    ],
+    'argc' => 1,
+]
+[21-Jun-2018 08:15:07 UTC] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home3/eqecae/public_html/index.php(15): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'CONTENT_LENGTH' => '22',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8',
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9',
+    'HTTP_COOKIE' => 'timezone=Asia/Kolkata; _csrf-frontend=c7915128d0a886ce57d88659c7b9e83b939395e0ed65274e868ad4759cec872aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22_827vXFf5d2DKbHFvfKJ-Og2h1CK5iQO%22%3B%7D; advanced-backend=ng804c1c9hsl23mivp45ev09s3; _csrf-backend=f6df96be23478d8d302f4db45584577e83c8f89e3a611a6ece1a6b1d319ffb60a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yKhScxNsIBJ3RyoaWRYhdRZWO7b5UVWy%22%3B%7D',
+    'HTTP_HOST' => 'eqec.ae',
+    'HTTP_ORIGIN' => 'http://eqec.ae',
+    'HTTP_REFERER' => 'http://eqec.ae/sectors/oil-gas-engineering',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => '3w3VZeiqPOv14Zp_imtzoSpxK_B8OZRHTIbVTbj_YVSANedSnvJ6jcCFqDvBCTvnXBdgulF283Ukt5YGjZYwGw==',
+    'HTTP_X_FORWARDED_FOR' => '162.241.218.124',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php70/root/etc:/opt/cpanel/ea-php70/root/etc/php.d:.',
+    'QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WyteiyEeG1xviEoLSSjWSAAAAHk',
+    'REDIRECT_URL' => '/site/subscribe-mail',
+    'REMOTE_ADDR' => '122.164.103.216',
+    'REMOTE_PORT' => '43703',
+    'REQUEST_METHOD' => 'POST',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/site/subscribe-mail',
+    'SCRIPT_FILENAME' => '/home3/eqecae/public_html/index.php',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_ADDR' => '162.241.218.124',
+    'SERVER_ADMIN' => 'webmaster@eqec.ae',
+    'SERVER_NAME' => 'eqec.ae',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at eqec.ae Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'WyteiyEeG1xviEoLSSjWSAAAAHk',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1529568907.6184580326080322265625,
+    'REQUEST_TIME' => 1529568907,
+    'argv' => [
+        'site/subscribe-mail',
+    ],
+    'argc' => 1,
+]
+[21-Jun-2018 08:18:38 UTC] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home3/eqecae/public_html/index.php(15): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'CONTENT_LENGTH' => '22',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8',
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9',
+    'HTTP_COOKIE' => 'timezone=Asia/Kolkata; _csrf-frontend=c7915128d0a886ce57d88659c7b9e83b939395e0ed65274e868ad4759cec872aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22_827vXFf5d2DKbHFvfKJ-Og2h1CK5iQO%22%3B%7D; advanced-backend=ng804c1c9hsl23mivp45ev09s3; _csrf-backend=f6df96be23478d8d302f4db45584577e83c8f89e3a611a6ece1a6b1d319ffb60a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yKhScxNsIBJ3RyoaWRYhdRZWO7b5UVWy%22%3B%7D',
+    'HTTP_HOST' => 'eqec.ae',
+    'HTTP_ORIGIN' => 'http://eqec.ae',
+    'HTTP_REFERER' => 'http://eqec.ae/sectors/oil-gas-engineering',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'IXKyLU3fOiAc-tvaw1_onpyIRSeJkbeiat2J_JUJ-PJ-SoAaO4d8Rime6Z6IPaDY6u4ObaTe0JAC7Mq3oGCpvQ==',
+    'HTTP_X_FORWARDED_FOR' => '162.241.218.124',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php70/root/etc:/opt/cpanel/ea-php70/root/etc/php.d:.',
+    'QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WytfXiEeG1xviEoLSSjYTwAAAJk',
+    'REDIRECT_URL' => '/site/subscribe-mail',
+    'REMOTE_ADDR' => '122.164.103.216',
+    'REMOTE_PORT' => '45901',
+    'REQUEST_METHOD' => 'POST',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/site/subscribe-mail',
+    'SCRIPT_FILENAME' => '/home3/eqecae/public_html/index.php',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_ADDR' => '162.241.218.124',
+    'SERVER_ADMIN' => 'webmaster@eqec.ae',
+    'SERVER_NAME' => 'eqec.ae',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at eqec.ae Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'WytfXiEeG1xviEoLSSjYTwAAAJk',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1529569118.7680089473724365234375,
+    'REQUEST_TIME' => 1529569118,
+    'argv' => [
+        'site/subscribe-mail',
+    ],
+    'argc' => 1,
+]
+[10-Jul-2018 08:50:36 UTC] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home3/eqecae/public_html/index.php(15): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'CONTENT_LENGTH' => '29',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8',
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us',
+    'HTTP_COOKIE' => '_csrf-frontend=b85639ade21eb2fdf02c8fe51180652d8468609d8a26ac0e3c47bc605b192800a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22RAAqT-7dxIt8xRlusXJnEQQwkBd3BDm8%22%3B%7D',
+    'HTTP_HOST' => 'eqec.ae',
+    'HTTP_ORIGIN' => 'http://eqec.ae',
+    'HTTP_REFERER' => 'http://eqec.ae/pdf/EqecProfile.pdf',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1',
+    'HTTP_X_CSRF_TOKEN' => 'Sm-dKDnUjxQBxUSPg7xGUiktyFjSOW5GYlUa1vDNCW0YLtxZbfm4cHmMMLf77ionWnWCNpdoPzEJF37lsolkVQ==',
+    'HTTP_X_FORWARDED_FOR' => '162.241.218.124',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php70/root/etc:/opt/cpanel/ea-php70/root/etc/php.d:.',
+    'QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'W0RzXDCvKC8s2SVwFCcLuwAAAA4',
+    'REDIRECT_URL' => '/site/subscribe-mail',
+    'REMOTE_ADDR' => '37.245.162.141',
+    'REMOTE_PORT' => '12879',
+    'REQUEST_METHOD' => 'POST',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/site/subscribe-mail',
+    'SCRIPT_FILENAME' => '/home3/eqecae/public_html/index.php',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_ADDR' => '162.241.218.124',
+    'SERVER_ADMIN' => 'webmaster@eqec.ae',
+    'SERVER_NAME' => 'eqec.ae',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at eqec.ae Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'W0RzXDCvKC8s2SVwFCcLuwAAAA4',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1531212636.716434001922607421875,
+    'REQUEST_TIME' => 1531212636,
+    'argv' => [
+        'site/subscribe-mail',
+    ],
+    'argc' => 1,
+]
+[10-Jul-2018 08:50:42 UTC] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home3/eqecae/public_html/index.php(15): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'CONTENT_LENGTH' => '29',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8',
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us',
+    'HTTP_COOKIE' => '_csrf-frontend=b85639ade21eb2fdf02c8fe51180652d8468609d8a26ac0e3c47bc605b192800a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22RAAqT-7dxIt8xRlusXJnEQQwkBd3BDm8%22%3B%7D',
+    'HTTP_HOST' => 'eqec.ae',
+    'HTTP_ORIGIN' => 'http://eqec.ae',
+    'HTTP_REFERER' => 'http://eqec.ae/pdf/EqecProfile.pdf',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1',
+    'HTTP_X_CSRF_TOKEN' => 'Sm-dKDnUjxQBxUSPg7xGUiktyFjSOW5GYlUa1vDNCW0YLtxZbfm4cHmMMLf77ionWnWCNpdoPzEJF37lsolkVQ==',
+    'HTTP_X_FORWARDED_FOR' => '162.241.218.124',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php70/root/etc:/opt/cpanel/ea-php70/root/etc/php.d:.',
+    'QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'W0RzYq@33yovbDgrHswJ8wAAAJ0',
+    'REDIRECT_URL' => '/site/subscribe-mail',
+    'REMOTE_ADDR' => '37.245.162.141',
+    'REMOTE_PORT' => '12967',
+    'REQUEST_METHOD' => 'POST',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/site/subscribe-mail',
+    'SCRIPT_FILENAME' => '/home3/eqecae/public_html/index.php',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_ADDR' => '162.241.218.124',
+    'SERVER_ADMIN' => 'webmaster@eqec.ae',
+    'SERVER_NAME' => 'eqec.ae',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at eqec.ae Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'W0RzYq@33yovbDgrHswJ8wAAAJ0',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1531212642.9245650768280029296875,
+    'REQUEST_TIME' => 1531212642,
+    'argv' => [
+        'site/subscribe-mail',
+    ],
+    'argc' => 1,
+]
+[10-Jul-2018 08:50:50 UTC] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home3/eqecae/public_html/index.php(15): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'CONTENT_LENGTH' => '29',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8',
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us',
+    'HTTP_COOKIE' => '_csrf-frontend=b85639ade21eb2fdf02c8fe51180652d8468609d8a26ac0e3c47bc605b192800a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22RAAqT-7dxIt8xRlusXJnEQQwkBd3BDm8%22%3B%7D',
+    'HTTP_HOST' => 'eqec.ae',
+    'HTTP_ORIGIN' => 'http://eqec.ae',
+    'HTTP_REFERER' => 'http://eqec.ae/pdf/EqecProfile.pdf',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1',
+    'HTTP_X_CSRF_TOKEN' => 'Sm-dKDnUjxQBxUSPg7xGUiktyFjSOW5GYlUa1vDNCW0YLtxZbfm4cHmMMLf77ionWnWCNpdoPzEJF37lsolkVQ==',
+    'HTTP_X_FORWARDED_FOR' => '162.241.218.124',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php70/root/etc:/opt/cpanel/ea-php70/root/etc/php.d:.',
+    'QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'W0Rzaq@33yovbDgrHswJ-AAAAH0',
+    'REDIRECT_URL' => '/site/subscribe-mail',
+    'REMOTE_ADDR' => '37.245.162.141',
+    'REMOTE_PORT' => '12999',
+    'REQUEST_METHOD' => 'POST',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/site/subscribe-mail',
+    'SCRIPT_FILENAME' => '/home3/eqecae/public_html/index.php',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_ADDR' => '162.241.218.124',
+    'SERVER_ADMIN' => 'webmaster@eqec.ae',
+    'SERVER_NAME' => 'eqec.ae',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at eqec.ae Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'W0Rzaq@33yovbDgrHswJ-AAAAH0',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1531212650.5583989620208740234375,
+    'REQUEST_TIME' => 1531212650,
+    'argv' => [
+        'site/subscribe-mail',
+    ],
+    'argc' => 1,
+]
+[10-Jul-2018 08:51:03 UTC] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home3/eqecae/public_html/index.php(15): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'CONTENT_LENGTH' => '29',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8',
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us',
+    'HTTP_COOKIE' => '_csrf-frontend=b85639ade21eb2fdf02c8fe51180652d8468609d8a26ac0e3c47bc605b192800a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22RAAqT-7dxIt8xRlusXJnEQQwkBd3BDm8%22%3B%7D',
+    'HTTP_HOST' => 'eqec.ae',
+    'HTTP_ORIGIN' => 'http://eqec.ae',
+    'HTTP_REFERER' => 'http://eqec.ae/pdf/EqecProfile.pdf',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1',
+    'HTTP_X_CSRF_TOKEN' => 'Sm-dKDnUjxQBxUSPg7xGUiktyFjSOW5GYlUa1vDNCW0YLtxZbfm4cHmMMLf77ionWnWCNpdoPzEJF37lsolkVQ==',
+    'HTTP_X_FORWARDED_FOR' => '162.241.218.124',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php70/root/etc:/opt/cpanel/ea-php70/root/etc/php.d:.',
+    'QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'W0Rzd6@33yovbDgrHswKDwAAALA',
+    'REDIRECT_URL' => '/site/subscribe-mail',
+    'REMOTE_ADDR' => '37.245.162.141',
+    'REMOTE_PORT' => '13083',
+    'REQUEST_METHOD' => 'POST',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/site/subscribe-mail',
+    'SCRIPT_FILENAME' => '/home3/eqecae/public_html/index.php',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_ADDR' => '162.241.218.124',
+    'SERVER_ADMIN' => 'webmaster@eqec.ae',
+    'SERVER_NAME' => 'eqec.ae',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at eqec.ae Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'W0Rzd6@33yovbDgrHswKDwAAALA',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1531212663.554788112640380859375,
+    'REQUEST_TIME' => 1531212663,
+    'argv' => [
+        'site/subscribe-mail',
+    ],
+    'argc' => 1,
+]
+[10-Jul-2018 08:51:04 UTC] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home3/eqecae/public_html/index.php(15): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'CONTENT_LENGTH' => '29',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8',
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us',
+    'HTTP_COOKIE' => '_csrf-frontend=b85639ade21eb2fdf02c8fe51180652d8468609d8a26ac0e3c47bc605b192800a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22RAAqT-7dxIt8xRlusXJnEQQwkBd3BDm8%22%3B%7D',
+    'HTTP_HOST' => 'eqec.ae',
+    'HTTP_ORIGIN' => 'http://eqec.ae',
+    'HTTP_REFERER' => 'http://eqec.ae/pdf/EqecProfile.pdf',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1',
+    'HTTP_X_CSRF_TOKEN' => 'Sm-dKDnUjxQBxUSPg7xGUiktyFjSOW5GYlUa1vDNCW0YLtxZbfm4cHmMMLf77ionWnWCNpdoPzEJF37lsolkVQ==',
+    'HTTP_X_FORWARDED_FOR' => '162.241.218.124',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php70/root/etc:/opt/cpanel/ea-php70/root/etc/php.d:.',
+    'QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'W0RzdzCvKC8s2SVwFCcL6wAAADs',
+    'REDIRECT_URL' => '/site/subscribe-mail',
+    'REMOTE_ADDR' => '37.245.162.141',
+    'REMOTE_PORT' => '13089',
+    'REQUEST_METHOD' => 'POST',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/site/subscribe-mail',
+    'SCRIPT_FILENAME' => '/home3/eqecae/public_html/index.php',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_ADDR' => '162.241.218.124',
+    'SERVER_ADMIN' => 'webmaster@eqec.ae',
+    'SERVER_NAME' => 'eqec.ae',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at eqec.ae Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'W0RzdzCvKC8s2SVwFCcL6wAAADs',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1531212663.96860408782958984375,
+    'REQUEST_TIME' => 1531212663,
+    'argv' => [
+        'site/subscribe-mail',
+    ],
+    'argc' => 1,
+]
+[10-Jul-2018 09:47:39 UTC] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home3/eqecae/public_html/index.php(15): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'CONTENT_LENGTH' => '29',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8',
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us',
+    'HTTP_COOKIE' => 'advanced-frontend=kc21dcanbio7c6lslom4qdiff2; _csrf-frontend=210874b4a7c1a532bb36266b6202b79b0c2fe8469a85d62e373e8d9f9d78513da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ez8FnzvAESaRZ0gSNNUwG1WV0xs_jRLL%22%3B%7D',
+    'HTTP_HOST' => 'www.eqec.ae',
+    'HTTP_ORIGIN' => 'http://www.eqec.ae',
+    'HTTP_REFERER' => 'http://www.eqec.ae/pdf/EqecProfile.pdf',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1.1 Safari/605.1.15',
+    'HTTP_X_CSRF_TOKEN' => 'we3p23dTtuOED7m09U6f6yNyPj0gSNaJE_QPdZ9EMQSkl9GdGSnAosFc2Oavfvi4bTxrSmd5gd8jjHwq9RZ9SA==',
+    'HTTP_X_FORWARDED_FOR' => '162.241.218.124',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php70/root/etc:/opt/cpanel/ea-php70/root/etc/php.d:.',
+    'QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'W0SAuwHRJFp3yuzUBp0ItQAAAAw',
+    'REDIRECT_URL' => '/site/subscribe-mail',
+    'REMOTE_ADDR' => '217.164.66.91',
+    'REMOTE_PORT' => '48083',
+    'REQUEST_METHOD' => 'POST',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/site/subscribe-mail',
+    'SCRIPT_FILENAME' => '/home3/eqecae/public_html/index.php',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_ADDR' => '162.241.218.124',
+    'SERVER_ADMIN' => 'webmaster@eqec.ae',
+    'SERVER_NAME' => 'www.eqec.ae',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at www.eqec.ae Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'W0SAuwHRJFp3yuzUBp0ItQAAAAw',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1531216059.8473360538482666015625,
+    'REQUEST_TIME' => 1531216059,
+    'argv' => [
+        'site/subscribe-mail',
+    ],
+    'argc' => 1,
+]
+[10-Jul-2018 09:47:44 UTC] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home3/eqecae/public_html/index.php(15): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'CONTENT_LENGTH' => '29',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8',
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us',
+    'HTTP_COOKIE' => 'advanced-frontend=kc21dcanbio7c6lslom4qdiff2; _csrf-frontend=210874b4a7c1a532bb36266b6202b79b0c2fe8469a85d62e373e8d9f9d78513da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ez8FnzvAESaRZ0gSNNUwG1WV0xs_jRLL%22%3B%7D',
+    'HTTP_HOST' => 'www.eqec.ae',
+    'HTTP_ORIGIN' => 'http://www.eqec.ae',
+    'HTTP_REFERER' => 'http://www.eqec.ae/pdf/EqecProfile.pdf',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1.1 Safari/605.1.15',
+    'HTTP_X_CSRF_TOKEN' => 'we3p23dTtuOED7m09U6f6yNyPj0gSNaJE_QPdZ9EMQSkl9GdGSnAosFc2Oavfvi4bTxrSmd5gd8jjHwq9RZ9SA==',
+    'HTTP_X_FORWARDED_FOR' => '162.241.218.124',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php70/root/etc:/opt/cpanel/ea-php70/root/etc/php.d:.',
+    'QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'W0SAvwHRJFp3yuzUBp0IvQAAACY',
+    'REDIRECT_URL' => '/site/subscribe-mail',
+    'REMOTE_ADDR' => '217.164.66.91',
+    'REMOTE_PORT' => '48117',
+    'REQUEST_METHOD' => 'POST',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/site/subscribe-mail',
+    'SCRIPT_FILENAME' => '/home3/eqecae/public_html/index.php',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_ADDR' => '162.241.218.124',
+    'SERVER_ADMIN' => 'webmaster@eqec.ae',
+    'SERVER_NAME' => 'www.eqec.ae',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at www.eqec.ae Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'W0SAvwHRJFp3yuzUBp0IvQAAACY',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1531216064.0100688934326171875,
+    'REQUEST_TIME' => 1531216064,
+    'argv' => [
+        'site/subscribe-mail',
+    ],
+    'argc' => 1,
+]
+[10-Jul-2018 09:47:44 UTC] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home3/eqecae/public_html/index.php(15): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'CONTENT_LENGTH' => '29',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8',
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us',
+    'HTTP_COOKIE' => 'advanced-frontend=kc21dcanbio7c6lslom4qdiff2; _csrf-frontend=210874b4a7c1a532bb36266b6202b79b0c2fe8469a85d62e373e8d9f9d78513da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ez8FnzvAESaRZ0gSNNUwG1WV0xs_jRLL%22%3B%7D',
+    'HTTP_HOST' => 'www.eqec.ae',
+    'HTTP_ORIGIN' => 'http://www.eqec.ae',
+    'HTTP_REFERER' => 'http://www.eqec.ae/pdf/EqecProfile.pdf',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1.1 Safari/605.1.15',
+    'HTTP_X_CSRF_TOKEN' => 'we3p23dTtuOED7m09U6f6yNyPj0gSNaJE_QPdZ9EMQSkl9GdGSnAosFc2Oavfvi4bTxrSmd5gd8jjHwq9RZ9SA==',
+    'HTTP_X_FORWARDED_FOR' => '162.241.218.124',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php70/root/etc:/opt/cpanel/ea-php70/root/etc/php.d:.',
+    'QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'W0SAwHU3KUNhIHo9tFjhDwAAAKs',
+    'REDIRECT_URL' => '/site/subscribe-mail',
+    'REMOTE_ADDR' => '217.164.66.91',
+    'REMOTE_PORT' => '48123',
+    'REQUEST_METHOD' => 'POST',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/site/subscribe-mail',
+    'SCRIPT_FILENAME' => '/home3/eqecae/public_html/index.php',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_ADDR' => '162.241.218.124',
+    'SERVER_ADMIN' => 'webmaster@eqec.ae',
+    'SERVER_NAME' => 'www.eqec.ae',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at www.eqec.ae Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'W0SAwHU3KUNhIHo9tFjhDwAAAKs',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1531216064.766168117523193359375,
+    'REQUEST_TIME' => 1531216064,
+    'argv' => [
+        'site/subscribe-mail',
+    ],
+    'argc' => 1,
+]
+[10-Jul-2018 09:47:45 UTC] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home3/eqecae/public_html/index.php(15): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'CONTENT_LENGTH' => '29',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8',
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us',
+    'HTTP_COOKIE' => 'advanced-frontend=kc21dcanbio7c6lslom4qdiff2; _csrf-frontend=210874b4a7c1a532bb36266b6202b79b0c2fe8469a85d62e373e8d9f9d78513da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ez8FnzvAESaRZ0gSNNUwG1WV0xs_jRLL%22%3B%7D',
+    'HTTP_HOST' => 'www.eqec.ae',
+    'HTTP_ORIGIN' => 'http://www.eqec.ae',
+    'HTTP_REFERER' => 'http://www.eqec.ae/pdf/EqecProfile.pdf',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1.1 Safari/605.1.15',
+    'HTTP_X_CSRF_TOKEN' => 'we3p23dTtuOED7m09U6f6yNyPj0gSNaJE_QPdZ9EMQSkl9GdGSnAosFc2Oavfvi4bTxrSmd5gd8jjHwq9RZ9SA==',
+    'HTTP_X_FORWARDED_FOR' => '162.241.218.124',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php70/root/etc:/opt/cpanel/ea-php70/root/etc/php.d:.',
+    'QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'W0SAwXU3KUNhIHo9tFjhEAAAALE',
+    'REDIRECT_URL' => '/site/subscribe-mail',
+    'REMOTE_ADDR' => '217.164.66.91',
+    'REMOTE_PORT' => '48127',
+    'REQUEST_METHOD' => 'POST',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/site/subscribe-mail',
+    'SCRIPT_FILENAME' => '/home3/eqecae/public_html/index.php',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_ADDR' => '162.241.218.124',
+    'SERVER_ADMIN' => 'webmaster@eqec.ae',
+    'SERVER_NAME' => 'www.eqec.ae',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at www.eqec.ae Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'W0SAwXU3KUNhIHo9tFjhEAAAALE',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1531216065.2482039928436279296875,
+    'REQUEST_TIME' => 1531216065,
+    'argv' => [
+        'site/subscribe-mail',
+    ],
+    'argc' => 1,
+]
+[26-Jul-2018 00:43:39 UTC] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home3/eqecae/public_html/index.php(15): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'CONTENT_LENGTH' => '26',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8',
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US',
+    'HTTP_COOKIE' => '_csrf-frontend=f9ba1435afb681c1736f230ac23097600e8c4409077b8e2ff7d91e09a24c22fea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%227pHLVMaDctAjfL8Zfrpz-tCf6M9JBnxh%22%3B%7D',
+    'HTTP_HOST' => 'www.eqec.ae',
+    'HTTP_ORIGIN' => 'http://www.eqec.ae',
+    'HTTP_REFERER' => 'http://www.eqec.ae/',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 7.0; SM-G570F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/179.0.0.44.83;]',
+    'HTTP_X_CSRF_TOKEN' => '6JBQsi8xTrzy_lpA_7iDjc6IUlgUt1aW0qK5MOBK58Xf4Bj-eXwv-JGKGyqZ9LvXqPoiIjnDFfDk74B6oiSfrQ==',
+    'HTTP_X_FORWARDED_FOR' => '162.241.218.124',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php70/root/etc:/opt/cpanel/ea-php70/root/etc/php.d:.',
+    'QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'W1kZOgK1H2ZnFqSGxnoQRQAAAZw',
+    'REDIRECT_URL' => '/site/subscribe-mail',
+    'REMOTE_ADDR' => '47.9.212.66',
+    'REMOTE_PORT' => '43405',
+    'REQUEST_METHOD' => 'POST',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/site/subscribe-mail',
+    'SCRIPT_FILENAME' => '/home3/eqecae/public_html/index.php',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_ADDR' => '162.241.218.124',
+    'SERVER_ADMIN' => 'webmaster@eqec.ae',
+    'SERVER_NAME' => 'www.eqec.ae',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at www.eqec.ae Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'W1kZOgK1H2ZnFqSGxnoQRQAAAZw',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1532565818.9665710926055908203125,
+    'REQUEST_TIME' => 1532565818,
+    'argv' => [
+        'site/subscribe-mail',
+    ],
+    'argc' => 1,
+]
+[26-Jul-2018 00:47:06 UTC] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home3/eqecae/public_html/index.php(15): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'CONTENT_LENGTH' => '26',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8',
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US',
+    'HTTP_COOKIE' => '_csrf-frontend=f9ba1435afb681c1736f230ac23097600e8c4409077b8e2ff7d91e09a24c22fea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%227pHLVMaDctAjfL8Zfrpz-tCf6M9JBnxh%22%3B%7D',
+    'HTTP_HOST' => 'www.eqec.ae',
+    'HTTP_ORIGIN' => 'http://www.eqec.ae',
+    'HTTP_REFERER' => 'http://www.eqec.ae/careers',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 7.0; SM-G570F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/179.0.0.44.83;]',
+    'HTTP_X_CSRF_TOKEN' => 'MK1dm81qViITJbjDhak3QtG6pD2savqPumoWZnLXEpgH3RXXmyc3ZnBR-anj5Q8Yt8jUR4EeuemMJy8sMLlq8A==',
+    'HTTP_X_FORWARDED_FOR' => '162.241.218.124',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php70/root/etc:/opt/cpanel/ea-php70/root/etc/php.d:.',
+    'QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'W1kaCgDSz0iUcguWwxYHJQAAAS0',
+    'REDIRECT_URL' => '/site/subscribe-mail',
+    'REMOTE_ADDR' => '47.9.212.66',
+    'REMOTE_PORT' => '47913',
+    'REQUEST_METHOD' => 'POST',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/site/subscribe-mail',
+    'SCRIPT_FILENAME' => '/home3/eqecae/public_html/index.php',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_ADDR' => '162.241.218.124',
+    'SERVER_ADMIN' => 'webmaster@eqec.ae',
+    'SERVER_NAME' => 'www.eqec.ae',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at www.eqec.ae Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'W1kaCgDSz0iUcguWwxYHJQAAAS0',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1532566026.090056896209716796875,
+    'REQUEST_TIME' => 1532566026,
+    'argv' => [
+        'site/subscribe-mail',
+    ],
+    'argc' => 1,
+]
+[26-Jul-2018 00:47:09 UTC] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home3/eqecae/public_html/index.php(15): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'CONTENT_LENGTH' => '26',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8',
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US',
+    'HTTP_COOKIE' => '_csrf-frontend=f9ba1435afb681c1736f230ac23097600e8c4409077b8e2ff7d91e09a24c22fea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%227pHLVMaDctAjfL8Zfrpz-tCf6M9JBnxh%22%3B%7D',
+    'HTTP_HOST' => 'www.eqec.ae',
+    'HTTP_ORIGIN' => 'http://www.eqec.ae',
+    'HTTP_REFERER' => 'http://www.eqec.ae/careers',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 7.0; SM-G570F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/179.0.0.44.83;]',
+    'HTTP_X_CSRF_TOKEN' => 'MK1dm81qViITJbjDhak3QtG6pD2savqPumoWZnLXEpgH3RXXmyc3ZnBR-anj5Q8Yt8jUR4EeuemMJy8sMLlq8A==',
+    'HTTP_X_FORWARDED_FOR' => '162.241.218.124',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php70/root/etc:/opt/cpanel/ea-php70/root/etc/php.d:.',
+    'QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'W1kaDa4hA66uI5t87i8l-gAAAIg',
+    'REDIRECT_URL' => '/site/subscribe-mail',
+    'REMOTE_ADDR' => '47.9.212.66',
+    'REMOTE_PORT' => '47983',
+    'REQUEST_METHOD' => 'POST',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/site/subscribe-mail',
+    'SCRIPT_FILENAME' => '/home3/eqecae/public_html/index.php',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_ADDR' => '162.241.218.124',
+    'SERVER_ADMIN' => 'webmaster@eqec.ae',
+    'SERVER_NAME' => 'www.eqec.ae',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at www.eqec.ae Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'W1kaDa4hA66uI5t87i8l-gAAAIg',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1532566029.43715000152587890625,
+    'REQUEST_TIME' => 1532566029,
+    'argv' => [
+        'site/subscribe-mail',
+    ],
+    'argc' => 1,
+]
+[12-Aug-2018 13:01:14 UTC] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home3/eqecae/public_html/index.php(15): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'CONTENT_LENGTH' => '35',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8',
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US',
+    'HTTP_CACHE_CONTROL' => 'no-cache',
+    'HTTP_COOKIE' => '_csrf-frontend=69d420bff2cfaa090ef65b1f6c41a98b5e9653edf50163ce7be5ae170e0b34fea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%221I8Tds4QxUPDJcfcdc7ImF2DbkSaRbfi%22%3B%7D',
+    'HTTP_HOST' => 'www.eqec.ae',
+    'HTTP_REFERER' => 'http://www.eqec.ae/pdf/EqecProfile.pdf',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+    'HTTP_X_CSRF_TOKEN' => '2AX57KpXkD0HI9trZ41dmcW31s3K1HRwXHy1sZBPuRbpTMG4ziSkbH92iy8t7jv6odThhKeSRjQ-F-bQwi3ffw==',
+    'HTTP_X_FORWARDED_FOR' => '162.241.218.124',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php70/root/etc:/opt/cpanel/ea-php70/root/etc/php.d:.',
+    'QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'W3AvmmCrrBanBWKe0fIkzQAAACg',
+    'REDIRECT_URL' => '/site/subscribe-mail',
+    'REMOTE_ADDR' => '89.211.37.82',
+    'REMOTE_PORT' => '36832',
+    'REQUEST_METHOD' => 'POST',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/site/subscribe-mail',
+    'SCRIPT_FILENAME' => '/home3/eqecae/public_html/index.php',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_ADDR' => '162.241.218.124',
+    'SERVER_ADMIN' => 'webmaster@eqec.ae',
+    'SERVER_NAME' => 'www.eqec.ae',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at www.eqec.ae Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'W3AvmmCrrBanBWKe0fIkzQAAACg',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1534078874.36573505401611328125,
+    'REQUEST_TIME' => 1534078874,
+    'argv' => [
+        'site/subscribe-mail',
+    ],
+    'argc' => 1,
+]
+[12-Aug-2018 13:01:17 UTC] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home3/eqecae/public_html/index.php(15): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'CONTENT_LENGTH' => '35',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8',
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US',
+    'HTTP_CACHE_CONTROL' => 'no-cache',
+    'HTTP_COOKIE' => '_csrf-frontend=69d420bff2cfaa090ef65b1f6c41a98b5e9653edf50163ce7be5ae170e0b34fea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%221I8Tds4QxUPDJcfcdc7ImF2DbkSaRbfi%22%3B%7D',
+    'HTTP_HOST' => 'www.eqec.ae',
+    'HTTP_REFERER' => 'http://www.eqec.ae/pdf/EqecProfile.pdf',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+    'HTTP_X_CSRF_TOKEN' => '2AX57KpXkD0HI9trZ41dmcW31s3K1HRwXHy1sZBPuRbpTMG4ziSkbH92iy8t7jv6odThhKeSRjQ-F-bQwi3ffw==',
+    'HTTP_X_FORWARDED_FOR' => '162.241.218.124',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php70/root/etc:/opt/cpanel/ea-php70/root/etc/php.d:.',
+    'QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'W3AvnWLa@mO5H8edkhlr@AAAAJU',
+    'REDIRECT_URL' => '/site/subscribe-mail',
+    'REMOTE_ADDR' => '89.211.37.82',
+    'REMOTE_PORT' => '36878',
+    'REQUEST_METHOD' => 'POST',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/site/subscribe-mail',
+    'SCRIPT_FILENAME' => '/home3/eqecae/public_html/index.php',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_ADDR' => '162.241.218.124',
+    'SERVER_ADMIN' => 'webmaster@eqec.ae',
+    'SERVER_NAME' => 'www.eqec.ae',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at www.eqec.ae Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'W3AvnWLa@mO5H8edkhlr@AAAAJU',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1534078877.786552906036376953125,
+    'REQUEST_TIME' => 1534078877,
+    'argv' => [
+        'site/subscribe-mail',
+    ],
+    'argc' => 1,
+]
+[12-Aug-2018 13:01:19 UTC] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home3/eqecae/public_html/index.php(15): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'CONTENT_LENGTH' => '35',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8',
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US',
+    'HTTP_CACHE_CONTROL' => 'no-cache',
+    'HTTP_COOKIE' => '_csrf-frontend=69d420bff2cfaa090ef65b1f6c41a98b5e9653edf50163ce7be5ae170e0b34fea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%221I8Tds4QxUPDJcfcdc7ImF2DbkSaRbfi%22%3B%7D',
+    'HTTP_HOST' => 'www.eqec.ae',
+    'HTTP_REFERER' => 'http://www.eqec.ae/pdf/EqecProfile.pdf',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+    'HTTP_X_CSRF_TOKEN' => '2AX57KpXkD0HI9trZ41dmcW31s3K1HRwXHy1sZBPuRbpTMG4ziSkbH92iy8t7jv6odThhKeSRjQ-F-bQwi3ffw==',
+    'HTTP_X_FORWARDED_FOR' => '162.241.218.124',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php70/root/etc:/opt/cpanel/ea-php70/root/etc/php.d:.',
+    'QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'W3Avn2La@mO5H8edkhlsAgAAAKI',
+    'REDIRECT_URL' => '/site/subscribe-mail',
+    'REMOTE_ADDR' => '89.211.37.82',
+    'REMOTE_PORT' => '36920',
+    'REQUEST_METHOD' => 'POST',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/site/subscribe-mail',
+    'SCRIPT_FILENAME' => '/home3/eqecae/public_html/index.php',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_ADDR' => '162.241.218.124',
+    'SERVER_ADMIN' => 'webmaster@eqec.ae',
+    'SERVER_NAME' => 'www.eqec.ae',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at www.eqec.ae Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'W3Avn2La@mO5H8edkhlsAgAAAKI',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1534078879.3810379505157470703125,
+    'REQUEST_TIME' => 1534078879,
+    'argv' => [
+        'site/subscribe-mail',
+    ],
+    'argc' => 1,
+]
+[12-Aug-2018 13:01:54 UTC] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent. in /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home3/eqecae/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home3/eqecae/public_html/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home3/eqecae/public_html/index.php(15): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'CONTENT_LENGTH' => '35',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8',
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/eqecae/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US',
+    'HTTP_CACHE_CONTROL' => 'no-cache',
+    'HTTP_COOKIE' => '_csrf-frontend=69d420bff2cfaa090ef65b1f6c41a98b5e9653edf50163ce7be5ae170e0b34fea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%221I8Tds4QxUPDJcfcdc7ImF2DbkSaRbfi%22%3B%7D',
+    'HTTP_HOST' => 'www.eqec.ae',
+    'HTTP_REFERER' => 'http://www.eqec.ae/chairmans-message',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+    'HTTP_X_CSRF_TOKEN' => 'YuCXtCwoSrdcLEDnm4mhyry7XFBezYfL0D66G1s7R-9Tqa_gSFt-5iR5EKPR6sep2NhrGTOLtY-yVel6CVkhhg==',
+    'HTTP_X_FORWARDED_FOR' => '162.241.218.124',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php70/root/etc:/opt/cpanel/ea-php70/root/etc/php.d:.',
+    'QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_QUERY_STRING' => 'site/subscribe-mail',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'W3AvwmLa@mO5H8edkhlsaAAAAIg',
+    'REDIRECT_URL' => '/site/subscribe-mail',
+    'REMOTE_ADDR' => '89.211.37.82',
+    'REMOTE_PORT' => '37412',
+    'REQUEST_METHOD' => 'POST',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/site/subscribe-mail',
+    'SCRIPT_FILENAME' => '/home3/eqecae/public_html/index.php',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_ADDR' => '162.241.218.124',
+    'SERVER_ADMIN' => 'webmaster@eqec.ae',
+    'SERVER_NAME' => 'www.eqec.ae',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at www.eqec.ae Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'W3AvwmLa@mO5H8edkhlsaAAAAIg',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1534078914.168282985687255859375,
+    'REQUEST_TIME' => 1534078914,
+    'argv' => [
+        'site/subscribe-mail',
+    ],
+    'argc' => 1,
+]

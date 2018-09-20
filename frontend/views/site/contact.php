@@ -95,9 +95,9 @@ use common\components\MenuHeaderWidget;
                                     <!--<div class="text">if you want to get more info, ping us now.</div>-->
                                     <br>
                                     <ul class="list-style-two">
-                                        <li><span class="icon fa fa-volume-control-phone"></span><strong><?= $contact_info->phone ?></strong>Mon-Fri, 9am until 6pm</li>
-                                        <li><span class="icon fa fa-envelope-o"></span><strong><?= $contact_info->email ?></strong>We reply within 24 hours</li>
-                                        <li><span class="icon fa fa-map-marker"></span>
+                                        <li><span data-aos="flip-left" class="icon fa fa-volume-control-phone"></span><strong><?= $contact_info->phone ?></strong>Mon-Fri, 9am until 6pm</li>
+                                        <li><span data-aos="flip-left" class="icon fa fa-envelope-o"></span><strong><?= $contact_info->email ?></strong>We reply within 24 hours</li>
+                                        <li><span data-aos="flip-left" class="icon fa fa-map-marker"></span>
                                             <?= $contact_info->address ?>
                                         </li>
                                     </ul>

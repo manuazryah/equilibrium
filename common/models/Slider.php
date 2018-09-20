@@ -38,7 +38,7 @@ class Slider extends \yii\db\ActiveRecord {
             [['title', 'sub_title'], 'required'],
             [['image', 'title', 'sub_title', 'alt_tag'], 'string', 'max' => 100],
             [['image'], 'required', 'on' => 'create'],
-            [['image'], 'file', 'extensions' => 'jpg, png,jpeg'],
+            [['image'], 'file', 'extensions' => 'jpg, gif, png,jpeg'],
         ];
     }
 

@@ -17,7 +17,7 @@ use yii\bootstrap\ActiveForm;
                     <!--Main Slider-->
                     <div id="banner">
                         <section class="main-slider">
-                            <div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
+                            <div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="8000" >
 
 
                                 <!-- Wrapper For Slides -->
@@ -71,7 +71,7 @@ use yii\bootstrap\ActiveForm;
                             </div>
 
                         </section>
-                        <div class="header-lower index">
+                        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="header-lower index">
 
                             <div class="auto-container">
                                 <div class="nav-outer clearfix">
@@ -99,31 +99,33 @@ use yii\bootstrap\ActiveForm;
         </div>
     </div>
 </section>
-<section class="kc-elm kc-css-919334 kc_row index-chairmansmsg">
+<section class="kc-elm kc-css-919334 kc_row adequate-solution">
     <div class="kc-row-container">
         <div class="kc-wrap-columns">
             <div class="kc-elm kc-css-102672 kc_col-sm-12 kc_column kc_col-sm-12">
                 <div class="kc-col-container">
                     <!--Call To Action-->
-                    <section class="call-to-action" style="background: #0091C3;">
+                    <section class="call-to-action" style="background: #274894;">
                         <div class="auto-container">
                             <div class="row clearfix">
-                                <!--Column-->
-                                <?php $chairmans = Chairmans::findOne(1); ?>
-                                <div class="column col-md-3 col-sm-12 col-xs-12 pr50 pl50 text-center">
-
-                                </div>
-                                <div class="column col-md-9 col-sm-12 col-xs-12 chairmans-msg-cont">
-                                    <h2 class=""><?= $chairmans->title ?></h2>
-                                    <div class="text">
-                                        <p style="margin-top: 10px;"><?= $chairmans->short_content ?> </p>
+                                <div data-aos="fade-up" class="column col-md-9 col-sm-12 col-xs-12 fright">
+                                    <h2 class="">LOOKING AN ADEQUATE SOLUTION FOR YOUR<br> <b>NEXT PROJECT</b></h2>
+                                    <div class="clearfix"></div>
+                                    <div class="btn-side">
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                            <a class="theme-btn btn-style-three" target="_blank" download="" href="<?= $home_page_content->profile_download != '' ? Yii::$app->homeUrl . 'uploads/profile.' . $home_page_content->profile_download : '' ?>" style="text-align: center; 0px;right: 0px;display: block;width: fit-content;">Eletronic <b>Profile</b></a>                             
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                            <a class="theme-btn btn-style-three" href="/contact" style="text-align: center; 0px;right: 0px;display: block;width: fit-content;">Contact <b>EEC</b></a>                             
+                                        </div>
                                     </div>
-                                    <?= Html::a("Chairman's Message", ['/site/chairmans-message'], ['class' => 'theme-btn btn-style-three', 'style' => 'text-align: center; 0px;right: 0px;display: block;width: fit-content;']) ?>
+                                    <div class="clearfix"></div>
                                 </div>
                                 <!--Btn Column-->
                             </div>
                         </div>
                     </section>
+                    <div class="clearfix"></div>
                     <!--End Call To Action-->
                 </div>
             </div>
@@ -186,16 +188,22 @@ use yii\bootstrap\ActiveForm;
     <div class="company-profile">
         <div class="kc-col-container">
             <!--Call To Action-->
-            <section class="call-to-action">
+            <section class="call-to-action bg-logo">
                 <div class="auto-container">
                     <div class="row clearfix">
                         <!--Column-->
-                        <div class="column col-md-12 col-sm-12 col-xs-12">
-                            <div class="sec-title">
-                                <h2>EQUILIBRIUM</h2>
+                        <?php $chairmans = Chairmans::findOne(1); ?>
+                        <div class="column col-md-3 col-sm-12 col-xs-12 pr50 pl50 text-center">
+
+                        </div>
+                        <div class="column col-md-9 col-sm-12 col-xs-12 chairmans-msg-cont">
+                            <h2 class=""><?= $chairmans->title ?></h2>
+                            <div class="text">
+                                <p style="margin-top: 10px;"><?= $chairmans->short_content ?> </p>
                             </div>
-                            <p><?= $home_page_content->cpmpany_profile_message != '' ? $home_page_content->cpmpany_profile_message : '' ?></p>
-                            <a target="_blank" download="" href="<?= $home_page_content->profile_download != '' ? Yii::$app->homeUrl . 'uploads/profile.' . $home_page_content->profile_download : '' ?>" class="theme-btn btn-style-three">Download Electronic Profile</a>
+                            <div class="column col-md-12 col-sm-12 col-xs-12">
+                                <?= Html::a("Chairman's <b>Message</b>", ['/site/chairmans-message'], ['class' => 'theme-btn btn-style-three', 'style' => 'text-align: center; 0px;display: block;width: fit-content;']) ?>
+                            </div>
                         </div>
                         <!--Btn Column-->
                     </div>
@@ -223,7 +231,8 @@ use yii\bootstrap\ActiveForm;
                                 <div class="content-column col-md-6 col-sm-6 col-xs-12">
                                     <div class="text">
                                         <?= strlen($about_content->who_we_are_index) > 303 ? substr($about_content->who_we_are_index, 0, 300) . '...' : $about_content->who_we_are_index ?>
-                                        <?= Html::a('Read more', ['/site/about'], ['class' => '']) ?></div>
+                                        <?= Html::a('Read more', ['/site/about'], ['class' => '']) ?>
+                                    </div>
                                     <div class="image">
                                         <img src="<?= Yii::$app->homeUrl; ?>uploads/about/who_we_are_image.<?= $about_content->who_we_are_image ?>" alt="who_we_are" />
                                     </div>
@@ -240,8 +249,8 @@ use yii\bootstrap\ActiveForm;
                                                 <div class="lower-box">
                                                     <h3><a href="#">Our Mission</a></h3>
                                                     <div class="text">
-                                                        <?= strlen($about_content->our_mission) > 133 ? substr($about_content->our_mission, 0, 130) . '...' : $about_content->our_mission ?>
-                                                        <?= Html::a('Read more', ['/site/about'], ['class' => '']) ?>
+                                                        <?= $about_content->our_mission ?>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -255,8 +264,8 @@ use yii\bootstrap\ActiveForm;
                                                 <div class="lower-box">
                                                     <h3><a href="#">Our Vision</a></h3>
                                                     <div class="text">
-                                                        <?= strlen($about_content->our_vision) > 133 ? substr($about_content->our_vision, 0, 130) . '...' : $about_content->our_vision ?>
-                                                        <?= Html::a('Read more', ['/site/about'], ['class' => '']) ?>
+                                                        <?= $about_content->our_vision ?>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -272,6 +281,7 @@ use yii\bootstrap\ActiveForm;
         </div>
     </div>
 </section>
+
 <section class="kc-elm kc-css-989604 kc_row">
     <div class="kc-row-container">
         <div class="kc-wrap-columns">
@@ -279,76 +289,52 @@ use yii\bootstrap\ActiveForm;
                 <div class="kc-col-container">
 
                     <!--Work Section-->
-                    <section class="work-section">
-                        <div class="auto-container">
-                            <!--Sec Title-->
-                            <div class="sec-title">
-                                <h2>Work Process</h2>
-                            </div>
-                            <div class="row clearfix">
-                                <!--Process Block-->
-                                <div class="process-block col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                    <div class="inner-box">
-                                        <div class="upper-box">
-                                            <div class="icon-box">
-                                                <span class="icon flaticon-loupe"></span>
-                                                <div class="block-number wow zoomInStable" data-wow-delay="0ms" data-wow-duration="2000ms">1</div>
-                                            </div>
-                                        </div>
-                                        <div class="lower-box">
-                                            <h3><a href="#"><?= $home_page_content->work_process_title1 ?></a></h3>
-                                            <div class="text"><?= $home_page_content->work_process_content1 ?></div>
-                                        </div>
-                                    </div>
+                    <?php if ($work_process) { ?>
+                        <section class="work-section">
+                            <div class="auto-container">
+                                <!--Sec Title-->
+                                <div class="sec-title">
+                                    <h2>Work Process</h2>
                                 </div>
-                                <!--Process Block-->
-                                <div class="process-block col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                    <div class="inner-box">
-                                        <div class="upper-box">
-                                            <div class="icon-box">
-                                                <span class="icon flaticon-settings-2"></span>
-                                                <div class="block-number wow zoomInStable" data-wow-delay="0ms" data-wow-duration="2000ms">2</div>
+                                <div class="row clearfix">
+                                    <!--Process Block-->
+                                    <?php
+                                    $h = 1;
+                                    $icon = "flaticon-loupe";
+                                    foreach ($work_process as $work) {
+                                        if ($h == '2') {
+                                            $icon = "flaticon-settings-2";
+                                        }
+                                        if ($h == '3') {
+                                            $icon = "flaticon-new-message-envelope";
+                                        }
+                                        if ($h == '4') {
+                                            $icon = "flaticon-telemarketer";
+                                        }
+                                        ?>
+                                        <div class="process-block col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                            <div class="inner-box">
+                                                <div class="upper-box">
+                                                    <div class="icon-box">
+                                                        <span class="icon <?= $icon ?>"></span>
+                                                        <div class="block-number wow zoomInStable" data-wow-delay="0ms" data-wow-duration="2000ms"><?= $h ?></div>
+                                                    </div>
+                                                </div>
+                                                <div class="lower-box">
+                                                    <h3><a href="#"><?= $work->title ?></a></h3>
+                                                    <div class="text"><?= $work->content ?></div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="lower-box">
-                                            <h3><a href="#"><?= $home_page_content->work_process_title2 ?></a></h3>
-                                            <div class="text"><?= $home_page_content->work_process_content2 ?></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--Process Block-->
-                                <div class="process-block col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                    <div class="inner-box">
-                                        <div class="upper-box">
-                                            <div class="icon-box">
-                                                <span class="icon flaticon-new-message-envelope"></span>
-                                                <div class="block-number wow zoomInStable" data-wow-delay="0ms" data-wow-duration="2000ms">3</div>
-                                            </div>
-                                        </div>
-                                        <div class="lower-box">
-                                            <h3><a href="#"><?= $home_page_content->work_process_title3 ?></a></h3>
-                                            <div class="text"><?= $home_page_content->work_process_content3 ?></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--Process Block-->
-                                <div class="process-block col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                    <div class="inner-box">
-                                        <div class="upper-box">
-                                            <div class="icon-box">
-                                                <span class="icon flaticon-telemarketer"></span>
-                                                <div class="block-number wow zoomInStable" data-wow-delay="0ms" data-wow-duration="2000ms">4</div>
-                                            </div>
-                                        </div>
-                                        <div class="lower-box">
-                                            <h3><a href="#"><?= $home_page_content->work_process_title4 ?></a></h3>
-                                            <div class="text"><?= $home_page_content->work_process_content4 ?></div>
-                                        </div>
-                                    </div>
+                                        <?php
+                                        $h++;
+                                    }
+                                    ?>
+                                    <!--Process Block-->
                                 </div>
                             </div>
-                        </div>
-                    </section>
+                        </section>
+                    <?php } ?>
                     <!--End Work Section-->
 
                 </div>
@@ -356,6 +342,124 @@ use yii\bootstrap\ActiveForm;
         </div>
     </div>
 </section>
+
+<section class="kc-elm kc-css-989604 kc_row">
+    <div class="kc-row-container">
+        <div class="kc-wrap-columns">
+            <div class="kc-elm kc-css-396994 kc_col-sm-12 kc_column kc_col-sm-12">
+                <div class="kc-col-container">
+                    <section class="news-events-section">
+                        <div class="auto-container">
+                            <!--Sec Title-->
+                            <div class="sec-title">
+                                <h2>News & Events</h2>
+                            </div>
+                            <div class="row clearfix">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div class="carousel-controls blog-carousel-controls">
+                                        <div class="blog-carousel">
+                                            <div class="one-slide mx-auto">
+                                                <div class="blog text-center d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
+                                                    <div class="blog-box">
+                                                        <div href="" class="img-box blog-index-img-box">
+                                                            <a href="">
+                                                                <img class="img-responsive" src="<?= Yii::$app->homeUrl; ?>uploads/blog/blog1.png" alt="Chairman attends Gastech 2018 Conference at Barcelona, Spain">
+                                                            </a>
+                                                            <div class="overlay">
+                                                                <a class="read-more" href="">+</a>  
+                                                            </div>
+                                                        </div>
+                                                        <div class="content-box">
+                                                            <span>20-sep-2018</span>
+                                                            <a class="title">Conference at Barcelona</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="one-slide mx-auto">
+                                                <div class="blog text-center d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
+                                                    <div class="blog-box">
+                                                        <div href="" class="img-box blog-index-img-box">
+                                                            <a href="">
+                                                                <img class="img-responsive" src="<?= Yii::$app->homeUrl; ?>uploads/blog/blog1.png" alt="Chairman attends Gastech 2018 Conference at Barcelona, Spain">
+                                                            </a>
+                                                            <div class="overlay">
+                                                                <a class="read-more" href="">+</a>  
+                                                            </div>
+                                                        </div>
+                                                        <div class="content-box">
+                                                            <span>20-sep-2018</span>
+                                                            <a class="title">Conference at Barcelona</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="one-slide mx-auto">
+                                                <div class="blog text-center d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
+                                                    <div class="blog-box">
+                                                        <div href="" class="img-box blog-index-img-box">
+                                                            <a href="">
+                                                                <img class="img-responsive" src="<?= Yii::$app->homeUrl; ?>uploads/blog/blog1.png" alt="Chairman attends Gastech 2018 Conference at Barcelona, Spain">
+                                                            </a>
+                                                            <div class="overlay">
+                                                                <a class="read-more" href="">+</a>  
+                                                            </div>
+                                                        </div>
+                                                        <div class="content-box">
+                                                            <span>20-sep-2018</span>
+                                                            <a class="title">Conference at Barcelona</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="one-slide mx-auto">
+                                                <div class="blog text-center d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
+                                                    <div class="blog-box">
+                                                        <div href="" class="img-box blog-index-img-box">
+                                                            <a href="">
+                                                                <img class="img-responsive" src="<?= Yii::$app->homeUrl; ?>uploads/blog/blog1.png" alt="Chairman attends Gastech 2018 Conference at Barcelona, Spain">
+                                                            </a>
+                                                            <div class="overlay">
+                                                                <a class="read-more" href="">+</a>  
+                                                            </div>
+                                                        </div>
+                                                        <div class="content-box">
+                                                            <span>20-sep-2018</span>
+                                                            <a class="title">Conference at Barcelona</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="one-slide mx-auto">
+                                                <div class="blog text-center d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
+                                                    <div class="blog-box">
+                                                        <div href="" class="img-box blog-index-img-box">
+                                                            <a href="">
+                                                                <img class="img-responsive" src="<?= Yii::$app->homeUrl; ?>uploads/blog/blog1.png" alt="Chairman attends Gastech 2018 Conference at Barcelona, Spain">
+                                                            </a>
+                                                            <div class="overlay">
+                                                                <a class="read-more" href="">+</a>  
+                                                            </div>
+                                                        </div>
+                                                        <div class="content-box">
+                                                            <span>20-sep-2018</span>
+                                                            <a class="title">Conference at Barcelona</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="kc-elm kc-css-671882 kc_row">
     <div class="kc-row-container">
         <div class="kc-wrap-columns">
@@ -403,7 +507,7 @@ use yii\bootstrap\ActiveForm;
                                 <!--Info Block-->
                                 <div class="info-block col-md-4 col-sm-12 col-xs-12">
                                     <div class="inner">
-                                        <div class="icon-box">
+                                        <div data-aos="flip-left" class="icon-box">
                                             <span class="icon fa fa-map-marker"></span>
                                         </div>
                                         <div class="text">
@@ -414,7 +518,7 @@ use yii\bootstrap\ActiveForm;
                                 <!--Info Block-->
                                 <div class="info-block col-md-4 col-sm-12 col-xs-12">
                                     <div class="inner">
-                                        <div class="icon-box">
+                                        <div data-aos="flip-left" class="icon-box">
                                             <span class="icon fa fa-volume-control-phone"></span>
                                         </div>
                                         <div class="text"><span><?= $home_page_content->phone ?></span>Mon-Fri, 9am until 6pm</div>
@@ -423,7 +527,7 @@ use yii\bootstrap\ActiveForm;
                                 <!--Info Block-->
                                 <div class="info-block col-md-4 col-sm-12 col-xs-12">
                                     <div class="inner">
-                                        <div class="icon-box">
+                                        <div data-aos="flip-left" class="icon-box">
                                             <span class="icon fa fa-envelope-o"></span>
                                         </div>
                                         <div class="text"><span><?= $home_page_content->email ?></span>We reply within 24 hours</div>
@@ -448,7 +552,7 @@ use yii\bootstrap\ActiveForm;
 
                         <!--Map Outer-->
                         <?= $contact_info->location_iframe ?>
-                        <div class="auto-container clearfix">
+                        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="auto-container clearfix">
                             <div class="form-outer">
                                 <div class="inner-box">
                                     <h2>Get in Touch</h2>
